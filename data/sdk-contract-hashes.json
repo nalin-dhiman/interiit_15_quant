@@ -1,0 +1,15 @@
+{
+  "scope": "Audited supplied SDK Python sources and reference participants; source bytes are supplied separately.",
+  "sha256": {
+    "demo/demo_participant.py": "e09dd876062892b9af8ee96615756ae89432420050b3fd5c2b6428ec798aa1ec",
+    "examples/dealer.py": "8a2fb8c3f03b39a65368c1e0e0243a245f1418624463d72e2748c5b4f7192824",
+    "rfq/rfq/__init__.py": "cb038489d8a108e65e58e08ba241f8309b9cf0e69cdb3e651e3837307b033666",
+    "rfq/rfq/engine.py": "9ff3c05d61e6eb3e18e390809435ac1d11a22418beb5d6fae4bae284ecde51b8",
+    "rfq/rfq/exchange.py": "f639ef50e1b5853bd0527fe9990f3114c4ccd6d172b781a97d31cdf5b678765d",
+    "rfq/rfq/models.py": "5ac0c0ebb02513b3c1ce967d8e7fbb09ca5ae9a70cef234734a2df7e70b40ee9",
+    "rfq/rfq/runner.py": "20301c00aeab8ea9338adf20a090719cde3b196d499de6cd99784f651713630f",
+    "rfq/rfq/sdk.py": "9c1e5a616c3d50eaf7b369f249c3bbe70b3a40d2a6fc0a7053ee1b5cd1ecabad",
+    "rfq/rfq/settlement.py": "913d312d35a9103b5ba17f2bf57cf3e75e676e71beece06f9aec982f7931b6f9",
+    "rfq/rfq/store.py": "8dfa32a988081a339a5c663dc9d2b3c464fd261a0bbe34150622fb993d4f8606"
+  }
+}

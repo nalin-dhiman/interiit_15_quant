@@ -79,8 +79,12 @@ python3.11 -m venv .venv
 Use a new output directory for each experiment. The finite response example
 uses the frozen conventional parameters in `data/finite-baselines.json`;
 correct differentiation of that known model is not evidence of market alpha.
-Optional callback adapters live in `submission/` and require a separately
-installed organiser SDK. They are not needed for the application or NumPy tests.
+The complete scientific experiment harnesses, calibration studies, independent
+audits and callback regressions are also included. Optional SDK experiments and
+adapters require a separately installed, hash-verified organiser SDK; see
+[SDK research setup and reproduction limits](docs/sdk-research.md). SDK files
+and supplied datasets are not redistributed. They are not needed for the
+application or ordinary NumPy tests.
 
 ## What the research found
 
@@ -115,7 +119,9 @@ web/           Minimal interface and SVG charts
 resetmm/       NumPy research models and mathematical diagnostics
 tests-js/      Independent browser-engine regression tests
 tests/         Python accounting, control, response and theorem checks
+tests_sdk/     Explicitly gated optional SDK contract and controller regressions
 experiments/   Reproducible synthetic and exact finite experiments
+scripts/       Independent research ledger audits, analysis and callback profiles
 submission/    Optional organiser-specific callback adapters
 data/          Compact aggregate research results and frozen finite baselines
 tools/         Local static server and deterministic build

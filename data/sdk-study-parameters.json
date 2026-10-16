@@ -1,0 +1,200 @@
+{
+  "historical_source_sha256": "05f26ce7d7aa3043565b2e70aa4a3fad57fcba60fc629ba23efb9ba2187bae5f",
+  "scope": "Frozen historical development selections. Factorial contrasts remain exploratory.",
+  "selected": {
+    "B2": {
+      "base_edge": 0.08,
+      "forecast_weight": 0.0,
+      "freeze_current_quotes": false,
+      "inventory_skew": 0.0,
+      "mode": "B2",
+      "settlement_coefficients": {
+        "B": {
+          "A": 2.0
+        }
+      },
+      "total_intervals": 12
+    },
+    "B3": {
+      "band_fraction": 0.6,
+      "base_edge": 0.08,
+      "factor_hedge": false,
+      "forecast_weight": 0.5,
+      "freeze_current_quotes": false,
+      "inventory_skew": 0.005,
+      "mode": "B3",
+      "risk_weight": 0.0002,
+      "settlement_coefficients": {
+        "B": {
+          "A": 2.0
+        }
+      },
+      "target_fraction": 0.5,
+      "total_intervals": 12
+    },
+    "B3_factor": {
+      "band_fraction": 0.4,
+      "base_edge": 0.08,
+      "factor_hedge": true,
+      "forecast_weight": 0.25,
+      "freeze_current_quotes": false,
+      "inventory_skew": 0.002,
+      "mode": "B3",
+      "risk_weight": 0.0002,
+      "settlement_coefficients": {
+        "B": {
+          "A": 2.0
+        }
+      },
+      "target_fraction": 0.5,
+      "total_intervals": 12
+    },
+    "B4": {
+      "band_fraction": 0.6,
+      "base_edge": 0.12,
+      "factor_risk": false,
+      "forecast_weight": 0.0,
+      "freeze_current_quotes": false,
+      "inventory_skew": 0.005,
+      "risk_multiplier": 2.0,
+      "settlement_coefficients": {
+        "B": {
+          "A": 2.0
+        }
+      },
+      "target_fraction": 0.0,
+      "total_intervals": 12
+    },
+    "B4_factor": {
+      "band_fraction": 0.4,
+      "base_edge": 0.08,
+      "factor_risk": true,
+      "forecast_weight": 0.5,
+      "freeze_current_quotes": false,
+      "inventory_skew": 0.002,
+      "risk_multiplier": 1.0,
+      "settlement_coefficients": {
+        "B": {
+          "A": 2.0
+        }
+      },
+      "target_fraction": 0.5,
+      "total_intervals": 12
+    },
+    "B4_fixedprice": {
+      "band_fraction": 0.6,
+      "base_edge": 0.12,
+      "factor_risk": false,
+      "forecast_weight": 0.0,
+      "freeze_current_quotes": false,
+      "inventory_skew": 0.005,
+      "risk_multiplier": 2.0,
+      "settlement_coefficients": {
+        "B": {
+          "A": 2.0
+        }
+      },
+      "target_fraction": 0.0,
+      "total_intervals": 12
+    },
+    "B4_reduce": {
+      "band_fraction": 0.6,
+      "base_edge": 0.12,
+      "factor_risk": false,
+      "forecast_weight": 0.0,
+      "freeze_current_quotes": false,
+      "inventory_skew": 0.005,
+      "reduce_only": true,
+      "risk_multiplier": 2.0,
+      "settlement_coefficients": {
+        "B": {
+          "A": 2.0
+        }
+      },
+      "target_fraction": 0.0,
+      "total_intervals": 12
+    },
+    "B4_zeroquote": {
+      "band_fraction": 0.6,
+      "base_edge": 0.12,
+      "factor_risk": false,
+      "forecast_weight": 0.0,
+      "freeze_current_quotes": false,
+      "inventory_skew": 0.005,
+      "risk_multiplier": 2.0,
+      "settlement_coefficients": {
+        "B": {
+          "A": 2.0
+        }
+      },
+      "target_fraction": 0.0,
+      "total_intervals": 12
+    },
+    "BR2": {
+      "band_fraction": 0.35,
+      "base_edge": 0.08,
+      "boundary_reset": true,
+      "factor_hedge": false,
+      "forecast_weight": 0.25,
+      "freeze_current_quotes": false,
+      "inventory_skew": 0.002,
+      "mode": "R2",
+      "risk_weight": 0.0001,
+      "settlement_coefficients": {
+        "B": {
+          "A": 2.0
+        }
+      },
+      "target_fraction": 0.5,
+      "total_intervals": 12
+    },
+    "R2B": {
+      "band_fraction": 0.1,
+      "base_edge": 0.04,
+      "factor_risk": false,
+      "forecast_weight": 0.5,
+      "freeze_current_quotes": false,
+      "inventory_skew": 0.0,
+      "risk_multiplier": 0.0,
+      "settlement_coefficients": {
+        "B": {
+          "A": 2.0
+        }
+      },
+      "target_fraction": 0.0,
+      "total_intervals": 12
+    },
+    "R2B_fixedprice": {
+      "band_fraction": 0.6,
+      "base_edge": 0.12,
+      "factor_risk": false,
+      "forecast_weight": 0.0,
+      "freeze_current_quotes": false,
+      "inventory_skew": 0.005,
+      "risk_multiplier": 2.0,
+      "settlement_coefficients": {
+        "B": {
+          "A": 2.0
+        }
+      },
+      "target_fraction": 0.0,
+      "total_intervals": 12
+    },
+    "R2B_matched": {
+      "band_fraction": 0.6,
+      "base_edge": 0.12,
+      "factor_risk": false,
+      "forecast_weight": 0.0,
+      "freeze_current_quotes": false,
+      "inventory_skew": 0.005,
+      "risk_multiplier": 2.0,
+      "settlement_coefficients": {
+        "B": {
+          "A": 2.0
+        }
+      },
+      "target_fraction": 0.0,
+      "total_intervals": 12
+    }
+  }
+}

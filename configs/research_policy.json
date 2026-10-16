@@ -1,0 +1,58 @@
+{
+  "R2B_whole_policy_primary_gate": true,
+  "baseline_parameters": {
+    "band_fraction": 0.6,
+    "base_edge": 0.12,
+    "factor_risk": false,
+    "forecast_weight": 0.0,
+    "freeze_current_quotes": false,
+    "inventory_skew": 0.005,
+    "risk_multiplier": 2.0,
+    "settlement_coefficients": {
+      "B": {
+        "A": 2.0
+      }
+    },
+    "target_fraction": 0.0,
+    "total_intervals": 12
+  },
+  "default": "B4",
+  "distinct_reset_increment_established": false,
+  "exploratory_alternative_baseline_parameters": {
+    "band_fraction": 0.1,
+    "base_edge": 0.04,
+    "factor_risk": false,
+    "forecast_weight": 0.5,
+    "freeze_current_quotes": false,
+    "inventory_skew": 0.0,
+    "risk_multiplier": 0.0,
+    "settlement_coefficients": {
+      "B": {
+        "A": 2.0
+      }
+    },
+    "target_fraction": 0.0,
+    "total_intervals": 12
+  },
+  "historical_parameter_artifact_sha256": "c117a7f9bf68c1cff1ba8d8c6db27a6e5a56c49793c087a20897865df5b17ee6",
+  "no_market_profit_guarantee": true,
+  "project_scope": "RESEARCH_ONLY",
+  "reset_parameters": {
+    "band_fraction": 0.1,
+    "base_edge": 0.04,
+    "factor_risk": false,
+    "forecast_weight": 0.5,
+    "freeze_current_quotes": false,
+    "inventory_skew": 0.0,
+    "risk_multiplier": 0.0,
+    "settlement_coefficients": {
+      "B": {
+        "A": 2.0
+      }
+    },
+    "target_fraction": 0.0,
+    "total_intervals": 12
+  },
+  "reset_promoted": false,
+  "response_runtime_enabled": false
+}

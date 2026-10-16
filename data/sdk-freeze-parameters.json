@@ -1,0 +1,127 @@
+{
+  "historical_source_sha256": "c701ecd185140ee609e659a1e8d3c886bf8ccb50445767c1674bbb30115dbe06",
+  "scope": "Frozen historical development selections. Replaying their namespaces is not fresh evidence.",
+  "selected": {
+    "B1": {
+      "band_fraction": 0.2,
+      "base_edge": 0.04,
+      "factor_hedge": false,
+      "forecast_weight": 0.0,
+      "inventory_skew": 0.0,
+      "mode": "B1",
+      "price_drift": null,
+      "settlement_coefficients": {
+        "B": {
+          "A": 2.0
+        }
+      },
+      "settlement_constants": {},
+      "target_fraction": 0.0,
+      "total_intervals": 12
+    },
+    "B2": {
+      "band_fraction": 0.2,
+      "base_edge": 0.04,
+      "factor_hedge": false,
+      "forecast_weight": 0.0,
+      "inventory_skew": 0.0,
+      "mode": "B2",
+      "price_drift": null,
+      "settlement_coefficients": {
+        "B": {
+          "A": 2.0
+        }
+      },
+      "settlement_constants": {},
+      "target_fraction": 0.0,
+      "total_intervals": 12
+    },
+    "B3": {
+      "band_fraction": 0.6,
+      "base_edge": 0.04,
+      "factor_hedge": false,
+      "forecast_weight": 0.0,
+      "inventory_skew": 0.005,
+      "mode": "B3",
+      "price_drift": null,
+      "settlement_coefficients": {
+        "B": {
+          "A": 2.0
+        }
+      },
+      "settlement_constants": {},
+      "target_fraction": 0.0,
+      "total_intervals": 12
+    },
+    "B3_factor": {
+      "band_fraction": 0.6,
+      "base_edge": 0.08,
+      "factor_hedge": true,
+      "forecast_weight": 0.0,
+      "inventory_skew": 0.005,
+      "mode": "B3",
+      "price_drift": null,
+      "settlement_coefficients": {
+        "B": {
+          "A": 2.0
+        }
+      },
+      "settlement_constants": {},
+      "target_fraction": 0.5,
+      "total_intervals": 12
+    },
+    "B3_frozen_quotes": {
+      "band_fraction": 0.6,
+      "base_edge": 0.04,
+      "factor_hedge": false,
+      "forecast_weight": 0.0,
+      "freeze_current_quotes": true,
+      "inventory_skew": 0.0,
+      "mode": "B3",
+      "price_drift": null,
+      "settlement_coefficients": {
+        "B": {
+          "A": 2.0
+        }
+      },
+      "settlement_constants": {},
+      "target_fraction": 0.0,
+      "total_intervals": 12
+    },
+    "R2": {
+      "band_fraction": 0.6,
+      "base_edge": 0.16,
+      "factor_hedge": false,
+      "forecast_weight": 0.0,
+      "inventory_skew": 0.005,
+      "mode": "R2",
+      "price_drift": null,
+      "settlement_coefficients": {
+        "B": {
+          "A": 2.0
+        }
+      },
+      "settlement_constants": {},
+      "target_fraction": 0.5,
+      "total_intervals": 12
+    },
+    "R2_fixed_quotes": {
+      "band_fraction": 0.6,
+      "base_edge": 0.04,
+      "factor_hedge": false,
+      "forecast_weight": 0.0,
+      "freeze_current_quotes": true,
+      "inventory_skew": 0.0,
+      "mode": "R2",
+      "price_drift": null,
+      "settlement_coefficients": {
+        "B": {
+          "A": 2.0
+        }
+      },
+      "settlement_constants": {},
+      "target_fraction": 0.5,
+      "total_intervals": 12
+    }
+  }
+}

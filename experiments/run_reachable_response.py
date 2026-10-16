@@ -43,7 +43,7 @@ def sources():
              "experiments/run_continuation_response.py",
              "resetmm/continuation.py", "resetmm/continuation_response.py",
              "tests/test_reachable_response.py", "docs/model.md"]
-    return {name: digest(ROOT / name) for name in names}
+    return complete_source_hashes({name: digest(ROOT / name) for name in names})
 
 
 def declare(out):
