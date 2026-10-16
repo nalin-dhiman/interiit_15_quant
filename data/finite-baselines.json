@@ -1,0 +1,562 @@
+[
+  {
+    "model": "balanced_risk0",
+    "oracle_objective": 0.55799560546875,
+    "oracle_quote_edges": [
+      0.01,
+      0.02,
+      0.03,
+      0.04,
+      0.05,
+      0.06,
+      0.07,
+      0.08,
+      0.09,
+      0.1,
+      0.11,
+      0.16
+    ],
+    "methods": {
+      "B1": {
+        "objective": 0.44209070011230467,
+        "raw_pnl": 0.44209070011230467,
+        "parameters": {
+          "edge": 0.08,
+          "skew": 0.01,
+          "threshold_lots": null,
+          "target_fraction": 0.0
+        }
+      },
+      "B2": {
+        "objective": 0.38774999999999993,
+        "raw_pnl": 0.38774999999999993,
+        "parameters": {
+          "edge": 0.06,
+          "skew": 0.0,
+          "threshold_lots": 1,
+          "target_fraction": 0.0
+        }
+      },
+      "B3": {
+        "objective": 0.44209070011230467,
+        "raw_pnl": 0.44209070011230467,
+        "parameters": {
+          "edge": 0.08,
+          "skew": 0.01,
+          "threshold_lots": null,
+          "target_fraction": 0.0
+        }
+      },
+      "R2_joint": {
+        "objective": 0.49485033984375004,
+        "raw_pnl": 0.49485033984375004,
+        "parameters": {
+          "edge": 0.06,
+          "skew": 0.0,
+          "threshold_lots": null,
+          "target_fraction": 0.0
+        }
+      },
+      "R2_fixed_quotes": {
+        "objective": 0.4648809522656249,
+        "raw_pnl": 0.4648809522656249,
+        "parameters": {
+          "edge": 0.08,
+          "skew": 0.01,
+          "threshold_lots": null,
+          "target_fraction": 0.0
+        }
+      }
+    }
+  },
+  {
+    "model": "persistent_risk0",
+    "oracle_objective": 0.48236636400000016,
+    "oracle_quote_edges": [
+      0.01,
+      0.02,
+      0.03,
+      0.04,
+      0.05,
+      0.06,
+      0.07,
+      0.08,
+      0.09,
+      0.1,
+      0.11,
+      0.16
+    ],
+    "methods": {
+      "B1": {
+        "objective": 0.3168008807533264,
+        "raw_pnl": 0.3168008807533264,
+        "parameters": {
+          "edge": 0.08,
+          "skew": 0.01,
+          "threshold_lots": null,
+          "target_fraction": 0.0
+        }
+      },
+      "B2": {
+        "objective": 0.38774999999999993,
+        "raw_pnl": 0.38774999999999993,
+        "parameters": {
+          "edge": 0.06,
+          "skew": 0.0,
+          "threshold_lots": 1,
+          "target_fraction": 0.0
+        }
+      },
+      "B3": {
+        "objective": 0.38774999999999993,
+        "raw_pnl": 0.38774999999999993,
+        "parameters": {
+          "edge": 0.06,
+          "skew": 0.0,
+          "threshold_lots": 1,
+          "target_fraction": 0.0
+        }
+      },
+      "R2_joint": {
+        "objective": 0.43132732500000004,
+        "raw_pnl": 0.43132732500000004,
+        "parameters": {
+          "edge": 0.06,
+          "skew": 0.0,
+          "threshold_lots": null,
+          "target_fraction": 0.0
+        }
+      },
+      "R2_fixed_quotes": {
+        "objective": 0.43132732500000004,
+        "raw_pnl": 0.43132732500000004,
+        "parameters": {
+          "edge": 0.06,
+          "skew": 0.0,
+          "threshold_lots": 1,
+          "target_fraction": 0.0
+        }
+      }
+    }
+  },
+  {
+    "model": "informed_risk0",
+    "oracle_objective": 0.355655647265625,
+    "oracle_quote_edges": [
+      0.01,
+      0.02,
+      0.03,
+      0.04,
+      0.05,
+      0.06,
+      0.07,
+      0.08,
+      0.09,
+      0.1,
+      0.11,
+      0.16
+    ],
+    "methods": {
+      "B1": {
+        "objective": 0.24807102714843754,
+        "raw_pnl": 0.24807102714843754,
+        "parameters": {
+          "edge": 0.08,
+          "skew": 0.01,
+          "threshold_lots": null,
+          "target_fraction": 0.0
+        }
+      },
+      "B2": {
+        "objective": 0.18374999999999997,
+        "raw_pnl": 0.18374999999999997,
+        "parameters": {
+          "edge": 0.08,
+          "skew": 0.0,
+          "threshold_lots": 1,
+          "target_fraction": 0.0
+        }
+      },
+      "B3": {
+        "objective": 0.24807102714843754,
+        "raw_pnl": 0.24807102714843754,
+        "parameters": {
+          "edge": 0.08,
+          "skew": 0.01,
+          "threshold_lots": null,
+          "target_fraction": 0.0
+        }
+      },
+      "R2_joint": {
+        "objective": 0.292655647265625,
+        "raw_pnl": 0.292655647265625,
+        "parameters": {
+          "edge": 0.08,
+          "skew": 0.0,
+          "threshold_lots": null,
+          "target_fraction": 0.0
+        }
+      },
+      "R2_fixed_quotes": {
+        "objective": 0.2897619046874999,
+        "raw_pnl": 0.2897619046874999,
+        "parameters": {
+          "edge": 0.08,
+          "skew": 0.01,
+          "threshold_lots": null,
+          "target_fraction": 0.0
+        }
+      }
+    }
+  },
+  {
+    "model": "expensive_risk0",
+    "oracle_objective": 0.4909895712158202,
+    "oracle_quote_edges": [
+      0.01,
+      0.02,
+      0.03,
+      0.04,
+      0.05,
+      0.06,
+      0.07,
+      0.08,
+      0.09,
+      0.1,
+      0.11,
+      0.16
+    ],
+    "methods": {
+      "B1": {
+        "objective": 0.44209070011230467,
+        "raw_pnl": 0.44209070011230467,
+        "parameters": {
+          "edge": 0.08,
+          "skew": 0.01,
+          "threshold_lots": null,
+          "target_fraction": 0.0
+        }
+      },
+      "B2": {
+        "objective": -0.28349999999999986,
+        "raw_pnl": -0.28349999999999986,
+        "parameters": {
+          "edge": 0.08,
+          "skew": 0.0,
+          "threshold_lots": 1,
+          "target_fraction": 0.0
+        }
+      },
+      "B3": {
+        "objective": 0.44209070011230467,
+        "raw_pnl": 0.44209070011230467,
+        "parameters": {
+          "edge": 0.08,
+          "skew": 0.01,
+          "threshold_lots": null,
+          "target_fraction": 0.0
+        }
+      },
+      "R2_joint": {
+        "objective": 0.44209070011230467,
+        "raw_pnl": 0.44209070011230467,
+        "parameters": {
+          "edge": 0.08,
+          "skew": 0.01,
+          "threshold_lots": null,
+          "target_fraction": 0.0
+        }
+      },
+      "R2_fixed_quotes": {
+        "objective": 0.44209070011230467,
+        "raw_pnl": 0.44209070011230467,
+        "parameters": {
+          "edge": 0.08,
+          "skew": 0.01,
+          "threshold_lots": null,
+          "target_fraction": 0.0
+        }
+      }
+    }
+  },
+  {
+    "model": "balanced_risk0.005",
+    "oracle_objective": 0.44162049257812497,
+    "oracle_quote_edges": [
+      0.01,
+      0.02,
+      0.03,
+      0.04,
+      0.05,
+      0.06,
+      0.07,
+      0.08,
+      0.09,
+      0.1,
+      0.11,
+      0.16
+    ],
+    "methods": {
+      "B1": {
+        "objective": 0.31998249881103524,
+        "raw_pnl": 0.44209070011230467,
+        "parameters": {
+          "edge": 0.08,
+          "skew": 0.01,
+          "threshold_lots": null,
+          "target_fraction": 0.0
+        }
+      },
+      "B2": {
+        "objective": 0.27825,
+        "raw_pnl": 0.3727499999999998,
+        "parameters": {
+          "edge": 0.08,
+          "skew": 0.0,
+          "threshold_lots": 1,
+          "target_fraction": 0.0
+        }
+      },
+      "B3": {
+        "objective": 0.31998249881103524,
+        "raw_pnl": 0.44209070011230467,
+        "parameters": {
+          "edge": 0.08,
+          "skew": 0.01,
+          "threshold_lots": null,
+          "target_fraction": 0.0
+        }
+      },
+      "R2_joint": {
+        "objective": 0.37416666656249997,
+        "raw_pnl": 0.4648809522656249,
+        "parameters": {
+          "edge": 0.08,
+          "skew": 0.01,
+          "threshold_lots": null,
+          "target_fraction": 0.0
+        }
+      },
+      "R2_fixed_quotes": {
+        "objective": 0.37416666656249997,
+        "raw_pnl": 0.4648809522656249,
+        "parameters": {
+          "edge": 0.08,
+          "skew": 0.01,
+          "threshold_lots": null,
+          "target_fraction": 0.0
+        }
+      }
+    }
+  },
+  {
+    "model": "persistent_risk0.005",
+    "oracle_objective": 0.37609395643839993,
+    "oracle_quote_edges": [
+      0.01,
+      0.02,
+      0.03,
+      0.04,
+      0.05,
+      0.06,
+      0.07,
+      0.08,
+      0.09,
+      0.1,
+      0.11,
+      0.16
+    ],
+    "methods": {
+      "B1": {
+        "objective": 0.15440212443946844,
+        "raw_pnl": 0.3168008807533264,
+        "parameters": {
+          "edge": 0.08,
+          "skew": 0.01,
+          "threshold_lots": null,
+          "target_fraction": 0.0
+        }
+      },
+      "B2": {
+        "objective": 0.27825,
+        "raw_pnl": 0.3727499999999998,
+        "parameters": {
+          "edge": 0.08,
+          "skew": 0.0,
+          "threshold_lots": 1,
+          "target_fraction": 0.0
+        }
+      },
+      "B3": {
+        "objective": 0.27825,
+        "raw_pnl": 0.3727499999999998,
+        "parameters": {
+          "edge": 0.08,
+          "skew": 0.0,
+          "threshold_lots": 1,
+          "target_fraction": 0.0
+        }
+      },
+      "R2_joint": {
+        "objective": 0.31250019333119994,
+        "raw_pnl": 0.4056475091423999,
+        "parameters": {
+          "edge": 0.08,
+          "skew": 0.01,
+          "threshold_lots": null,
+          "target_fraction": 0.0
+        }
+      },
+      "R2_fixed_quotes": {
+        "objective": 0.29704664062499997,
+        "raw_pnl": 0.3972609375000001,
+        "parameters": {
+          "edge": 0.08,
+          "skew": 0.0,
+          "threshold_lots": 1,
+          "target_fraction": 0.0
+        }
+      }
+    }
+  },
+  {
+    "model": "informed_risk0.005",
+    "oracle_objective": 0.25665879750000004,
+    "oracle_quote_edges": [
+      0.01,
+      0.02,
+      0.03,
+      0.04,
+      0.05,
+      0.06,
+      0.07,
+      0.08,
+      0.09,
+      0.1,
+      0.11,
+      0.16
+    ],
+    "methods": {
+      "B1": {
+        "objective": 0.12596282584716798,
+        "raw_pnl": 0.24807102714843754,
+        "parameters": {
+          "edge": 0.08,
+          "skew": 0.01,
+          "threshold_lots": null,
+          "target_fraction": 0.0
+        }
+      },
+      "B2": {
+        "objective": 0.08924999999999997,
+        "raw_pnl": 0.18374999999999997,
+        "parameters": {
+          "edge": 0.08,
+          "skew": 0.0,
+          "threshold_lots": 1,
+          "target_fraction": 0.0
+        }
+      },
+      "B3": {
+        "objective": 0.12596282584716798,
+        "raw_pnl": 0.24807102714843754,
+        "parameters": {
+          "edge": 0.08,
+          "skew": 0.01,
+          "threshold_lots": null,
+          "target_fraction": 0.0
+        }
+      },
+      "R2_joint": {
+        "objective": 0.19904761898437498,
+        "raw_pnl": 0.2897619046874999,
+        "parameters": {
+          "edge": 0.08,
+          "skew": 0.01,
+          "threshold_lots": null,
+          "target_fraction": 0.0
+        }
+      },
+      "R2_fixed_quotes": {
+        "objective": 0.19904761898437498,
+        "raw_pnl": 0.2897619046874999,
+        "parameters": {
+          "edge": 0.08,
+          "skew": 0.01,
+          "threshold_lots": null,
+          "target_fraction": 0.0
+        }
+      }
+    }
+  },
+  {
+    "model": "expensive_risk0.005",
+    "oracle_objective": 0.3625290230200196,
+    "oracle_quote_edges": [
+      0.01,
+      0.02,
+      0.03,
+      0.04,
+      0.05,
+      0.06,
+      0.07,
+      0.08,
+      0.09,
+      0.1,
+      0.11,
+      0.16
+    ],
+    "methods": {
+      "B1": {
+        "objective": 0.31998249881103524,
+        "raw_pnl": 0.44209070011230467,
+        "parameters": {
+          "edge": 0.08,
+          "skew": 0.01,
+          "threshold_lots": null,
+          "target_fraction": 0.0
+        }
+      },
+      "B2": {
+        "objective": -0.37800000000000017,
+        "raw_pnl": -0.28349999999999986,
+        "parameters": {
+          "edge": 0.08,
+          "skew": 0.0,
+          "threshold_lots": 1,
+          "target_fraction": 0.0
+        }
+      },
+      "B3": {
+        "objective": 0.31998249881103524,
+        "raw_pnl": 0.44209070011230467,
+        "parameters": {
+          "edge": 0.08,
+          "skew": 0.01,
+          "threshold_lots": null,
+          "target_fraction": 0.0
+        }
+      },
+      "R2_joint": {
+        "objective": 0.31998249881103524,
+        "raw_pnl": 0.44209070011230467,
+        "parameters": {
+          "edge": 0.08,
+          "skew": 0.01,
+          "threshold_lots": null,
+          "target_fraction": 0.0
+        }
+      },
+      "R2_fixed_quotes": {
+        "objective": 0.31998249881103524,
+        "raw_pnl": 0.44209070011230467,
+        "parameters": {
+          "edge": 0.08,
+          "skew": 0.01,
+          "threshold_lots": null,
+          "target_fraction": 0.0
+        }
+      }
+    }
+  }
+]

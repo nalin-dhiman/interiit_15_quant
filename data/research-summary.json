@@ -1,0 +1,1001 @@
+{
+  "scope": "Historical synthetic research comparisons; the browser simulator is a separate educational model.",
+  "primary": {
+    "assumptions": "independent synthetic path units; equal scenario mixture; approximate bootstrap; no tail-power claim",
+    "independent_paths": 2048,
+    "materiality": 1.0,
+    "opponent_repetitions_not_independent": true,
+    "paired_mean_difference": 6.245621838170031,
+    "stratified_path_bootstrap_95": [
+      3.7343037201061273,
+      8.670811273333948
+    ],
+    "superiority_gate": true
+  },
+  "policy_summary": {
+    "B0": {
+      "callback_errors": 0,
+      "crashes": 0,
+      "customer_notional": 49783706.97999998,
+      "exchange_notional": 43298350.790576324,
+      "fees": 4329.660000000002,
+      "max_decomposition_error": 1.1962164592205227e-10,
+      "maximum_callback_seconds": 0.067012187,
+      "mean_customer_fills": 14.828369140625,
+      "mean_monetary_components": {
+        "customer_spread": 8.256607980851198,
+        "decomposed_pnl": 7.032420091087282,
+        "exchange_execution_edge": 0.0,
+        "exogenous_price_move_pnl": -0.16714199132641688,
+        "fees": 1.0570458984375,
+        "penalties": 0.0,
+        "terminal_settlement_residual": 0.0
+      },
+      "mean_pnl": 7.0324200910963555,
+      "mean_q2_at_innovation": [
+        2.3011861661585327,
+        2.7322233866870067
+      ],
+      "median_pnl": 6.449002724890306,
+      "negative_sessions": 501,
+      "own_rejections": 0,
+      "penalties": 0.0,
+      "pnl_quantile_05": -3.1975448739503918,
+      "scenario_means": {
+        "0": 5.602459755259275,
+        "1": 7.569343650313897,
+        "2": 8.988972729675481,
+        "3": 7.292579645772861,
+        "4": 7.058289711057682,
+        "5": 6.62510152474573,
+        "6": 6.5611472232851895,
+        "7": 6.561466488660727
+      },
+      "sessions": 4096,
+      "worst_pnl": -33.66330387297785
+    },
+    "B2": {
+      "callback_errors": 0,
+      "crashes": 0,
+      "customer_notional": 63133458.01999998,
+      "exchange_notional": 53322890.29978391,
+      "fees": 5332.339999999999,
+      "max_decomposition_error": 1.2673240235017147e-10,
+      "maximum_callback_seconds": 0.077832688,
+      "mean_customer_fills": 19.045654296875,
+      "mean_monetary_components": {
+        "customer_spread": 8.599859028444317,
+        "decomposed_pnl": 7.095775803027419,
+        "exchange_execution_edge": 0.0,
+        "exogenous_price_move_pnl": -0.2022424051043988,
+        "fees": 1.3018408203125003,
+        "penalties": 0.0,
+        "terminal_settlement_residual": 0.0
+      },
+      "mean_pnl": 7.095775803037917,
+      "mean_q2_at_innovation": [
+        3.117544778963411,
+        3.355452870934966
+      ],
+      "median_pnl": 6.69808124373958,
+      "negative_sessions": 570,
+      "own_rejections": 0,
+      "penalties": 0.0,
+      "pnl_quantile_05": -4.333309309145989,
+      "scenario_means": {
+        "0": 6.444847282090052,
+        "1": 7.434973229704838,
+        "2": 8.922700015401517,
+        "3": 7.535542826743921,
+        "4": 6.736093469454033,
+        "5": 6.541245294160717,
+        "6": 6.565484285818513,
+        "7": 6.585320020929743
+      },
+      "sessions": 4096,
+      "worst_pnl": -49.58197685753112
+    },
+    "B3": {
+      "callback_errors": 0,
+      "crashes": 0,
+      "customer_notional": 60432796.70000002,
+      "exchange_notional": 11468522.396067522,
+      "fees": 1146.8700000000051,
+      "max_decomposition_error": 7.346656616391556e-11,
+      "maximum_callback_seconds": 0.087105735,
+      "mean_customer_fills": 18.5791015625,
+      "mean_monetary_components": {
+        "customer_spread": 2.7156950292209237,
+        "decomposed_pnl": 7.086200654584552,
+        "exchange_execution_edge": 0.0,
+        "exogenous_price_move_pnl": 2.2451958737843176,
+        "fees": 0.27999755859375,
+        "penalties": 0.0,
+        "terminal_settlement_residual": 2.40530731017306
+      },
+      "mean_pnl": 7.086200654585955,
+      "mean_q2_at_innovation": [
+        63.64660545287092,
+        49.79236137576218
+      ],
+      "median_pnl": 7.400932046388334,
+      "negative_sessions": 1442,
+      "own_rejections": 0,
+      "penalties": 0.0,
+      "pnl_quantile_05": -36.10171868949692,
+      "scenario_means": {
+        "0": 6.942306870657632,
+        "1": 8.66414917531634,
+        "2": 9.480107236021666,
+        "3": 8.058170338129656,
+        "4": 2.408460587330751,
+        "5": 7.848039353202466,
+        "6": 6.235855115344947,
+        "7": 7.052516560684182
+      },
+      "sessions": 4096,
+      "worst_pnl": -191.7274605086859
+    },
+    "B3_factor": {
+      "callback_errors": 0,
+      "crashes": 0,
+      "customer_notional": 61560064.86000003,
+      "exchange_notional": 23270040.723856427,
+      "fees": 2326.5200000000004,
+      "max_decomposition_error": 8.966694053924584e-11,
+      "maximum_callback_seconds": 0.083559277,
+      "mean_customer_fills": 18.782470703125,
+      "mean_monetary_components": {
+        "customer_spread": 6.260642676310733,
+        "decomposed_pnl": 9.278950422672775,
+        "exchange_execution_edge": 0.0,
+        "exogenous_price_move_pnl": 1.6462552750561394,
+        "fees": 0.567998046875,
+        "penalties": 0.0,
+        "terminal_settlement_residual": 1.940050518180902
+      },
+      "mean_pnl": 9.278950422670718,
+      "mean_q2_at_innovation": [
+        47.09453601371954,
+        26.902695074314053
+      ],
+      "median_pnl": 8.862276343032136,
+      "negative_sessions": 1063,
+      "own_rejections": 0,
+      "penalties": 0.0,
+      "pnl_quantile_05": -18.948254126811662,
+      "scenario_means": {
+        "0": 7.6323601794719025,
+        "1": 9.686825395888235,
+        "2": 11.4703187178537,
+        "3": 12.023285056018238,
+        "4": 7.849863431682053,
+        "5": 8.78214191696867,
+        "6": 9.073068871334243,
+        "7": 7.713739812148702
+      },
+      "sessions": 4096,
+      "worst_pnl": -79.33202764263842
+    },
+    "B4": {
+      "callback_errors": 0,
+      "crashes": 0,
+      "customer_notional": 40273131.85999995,
+      "exchange_notional": 48397523.09640574,
+      "fees": 4839.280000000012,
+      "max_decomposition_error": 7.261746759468224e-11,
+      "maximum_callback_seconds": 0.090736175,
+      "mean_customer_fills": 11.870849609375,
+      "mean_monetary_components": {
+        "customer_spread": 6.123603592688,
+        "decomposed_pnl": 20.554691312460708,
+        "exchange_execution_edge": 0.0,
+        "exogenous_price_move_pnl": 9.401400962812295,
+        "fees": 1.1814648437500002,
+        "penalties": 0.0,
+        "terminal_settlement_residual": 6.211151600710413
+      },
+      "mean_pnl": 20.55469131246084,
+      "mean_q2_at_innovation": [
+        40.32324218750003,
+        151.954016212525
+      ],
+      "median_pnl": 13.688112914132944,
+      "negative_sessions": 1203,
+      "own_rejections": 0,
+      "penalties": 0.0,
+      "pnl_quantile_05": -43.03847801784286,
+      "scenario_means": {
+        "0": 5.3544224668775655,
+        "1": 15.926403023644752,
+        "2": 26.164883288144523,
+        "3": 46.465701629824366,
+        "4": 25.383308006727248,
+        "5": 11.513828846413617,
+        "6": 27.179312112213722,
+        "7": 6.449671125840922
+      },
+      "sessions": 4096,
+      "worst_pnl": -197.44570252863923
+    },
+    "B4_factor": {
+      "callback_errors": 0,
+      "crashes": 0,
+      "customer_notional": 56561489.579999946,
+      "exchange_notional": 36987245.262061864,
+      "fees": 3698.429999999991,
+      "max_decomposition_error": 9.887912710837554e-11,
+      "maximum_callback_seconds": 0.076803193,
+      "mean_customer_fills": 17.751220703125,
+      "mean_monetary_components": {
+        "customer_spread": 4.735686549933124,
+        "decomposed_pnl": 16.996059378436218,
+        "exchange_execution_edge": 0.0,
+        "exogenous_price_move_pnl": 7.211435562639646,
+        "fees": 0.9029370117187501,
+        "penalties": 0.0,
+        "terminal_settlement_residual": 5.951874277582198
+      },
+      "mean_pnl": 16.996059378432737,
+      "mean_q2_at_innovation": [
+        126.70323019880568,
+        115.0764517435215
+      ],
+      "median_pnl": 14.132978846253536,
+      "negative_sessions": 949,
+      "own_rejections": 0,
+      "penalties": 0.0,
+      "pnl_quantile_05": -24.226813206212682,
+      "scenario_means": {
+        "0": 8.040513128947936,
+        "1": 13.05041473302461,
+        "2": 19.909707535308655,
+        "3": 35.84371713327539,
+        "4": 20.785167620985163,
+        "5": 11.724268241887955,
+        "6": 18.16742119381658,
+        "7": 8.447265440215602
+      },
+      "sessions": 4096,
+      "worst_pnl": -138.77967250242364
+    },
+    "B4_fixedprice": {
+      "callback_errors": 0,
+      "crashes": 0,
+      "customer_notional": 34871478.839999996,
+      "exchange_notional": 49633378.06759838,
+      "fees": 4962.410000000009,
+      "max_decomposition_error": 8.999734291137429e-11,
+      "maximum_callback_seconds": 0.088668336,
+      "mean_customer_fills": 10.49365234375,
+      "mean_monetary_components": {
+        "customer_spread": 6.899946686469492,
+        "decomposed_pnl": 21.683415645090925,
+        "exchange_execution_edge": 0.0,
+        "exogenous_price_move_pnl": 9.800084310881626,
+        "fees": 1.21152587890625,
+        "penalties": 0.0,
+        "terminal_settlement_residual": 6.194910526646057
+      },
+      "mean_pnl": 21.683415645090815,
+      "mean_q2_at_innovation": [
+        81.73854920922257,
+        159.99852324695107
+      ],
+      "median_pnl": 14.331024635546783,
+      "negative_sessions": 1205,
+      "own_rejections": 0,
+      "penalties": 0.0,
+      "pnl_quantile_05": -44.54811765607883,
+      "scenario_means": {
+        "0": 5.562607592100562,
+        "1": 16.861414908772417,
+        "2": 28.033369000276423,
+        "3": 47.91481046300382,
+        "4": 27.723873432821506,
+        "5": 10.878614457968439,
+        "6": 29.24355186857622,
+        "7": 7.249083437207133
+      },
+      "sessions": 4096,
+      "worst_pnl": -198.22052081067523
+    },
+    "B4_reduce": {
+      "callback_errors": 0,
+      "crashes": 0,
+      "customer_notional": 38168356.13999996,
+      "exchange_notional": 22979161.151517767,
+      "fees": 2297.5599999999954,
+      "max_decomposition_error": 1.0049916454590857e-10,
+      "maximum_callback_seconds": 0.090148192,
+      "mean_customer_fills": 11.179931640625,
+      "mean_monetary_components": {
+        "customer_spread": 7.2796301528469165,
+        "decomposed_pnl": 9.074179778090295,
+        "exchange_execution_edge": 0.0,
+        "exogenous_price_move_pnl": 1.5454435929294807,
+        "fees": 0.560927734375,
+        "penalties": 0.0,
+        "terminal_settlement_residual": 0.8100337666888979
+      },
+      "mean_pnl": 9.074179778095655,
+      "mean_q2_at_innovation": [
+        3.099990472560973,
+        12.74729460429366
+      ],
+      "median_pnl": 7.159688297106186,
+      "negative_sessions": 714,
+      "own_rejections": 0,
+      "penalties": 0.0,
+      "pnl_quantile_05": -7.862600243952329,
+      "scenario_means": {
+        "0": 4.974145703231159,
+        "1": 8.581094847696818,
+        "2": 12.855044438545747,
+        "3": 12.125077109896239,
+        "4": 10.423413973712627,
+        "5": 8.162056655095995,
+        "6": 8.931485093480518,
+        "7": 6.5411204031061345
+      },
+      "sessions": 4096,
+      "worst_pnl": -84.84593463374767
+    },
+    "B4_zeroquote": {
+      "callback_errors": 0,
+      "crashes": 0,
+      "customer_notional": 40273131.85999995,
+      "exchange_notional": 48397523.09640574,
+      "fees": 4839.280000000012,
+      "max_decomposition_error": 7.261746759468224e-11,
+      "maximum_callback_seconds": 0.07993122,
+      "mean_customer_fills": 11.870849609375,
+      "mean_monetary_components": {
+        "customer_spread": 6.123603592688,
+        "decomposed_pnl": 20.554691312460708,
+        "exchange_execution_edge": 0.0,
+        "exogenous_price_move_pnl": 9.401400962812295,
+        "fees": 1.1814648437500002,
+        "penalties": 0.0,
+        "terminal_settlement_residual": 6.211151600710413
+      },
+      "mean_pnl": 20.55469131246084,
+      "mean_q2_at_innovation": [
+        40.32324218750003,
+        151.954016212525
+      ],
+      "median_pnl": 13.688112914132944,
+      "negative_sessions": 1203,
+      "own_rejections": 0,
+      "penalties": 0.0,
+      "pnl_quantile_05": -43.03847801784286,
+      "scenario_means": {
+        "0": 5.3544224668775655,
+        "1": 15.926403023644752,
+        "2": 26.164883288144523,
+        "3": 46.465701629824366,
+        "4": 25.383308006727248,
+        "5": 11.513828846413617,
+        "6": 27.179312112213722,
+        "7": 6.449671125840922
+      },
+      "sessions": 4096,
+      "worst_pnl": -197.44570252863923
+    },
+    "BR2": {
+      "callback_errors": 0,
+      "crashes": 0,
+      "customer_notional": 61568397.619999975,
+      "exchange_notional": 30848661.099295244,
+      "fees": 3084.400000000002,
+      "max_decomposition_error": 1.2718714970105793e-10,
+      "maximum_callback_seconds": 0.091867869,
+      "mean_customer_fills": 18.7822265625,
+      "mean_monetary_components": {
+        "customer_spread": 6.4348859413433726,
+        "decomposed_pnl": 11.102069676271451,
+        "exchange_execution_edge": 0.0,
+        "exogenous_price_move_pnl": 3.047141621126846,
+        "fees": 0.7530273437500001,
+        "penalties": 0.0,
+        "terminal_settlement_residual": 2.3730694575512343
+      },
+      "mean_pnl": 11.102069676278383,
+      "mean_q2_at_innovation": [
+        9.993934197154463,
+        25.712567089049795
+      ],
+      "median_pnl": 9.702160214670585,
+      "negative_sessions": 896,
+      "own_rejections": 0,
+      "penalties": 0.0,
+      "pnl_quantile_05": -15.92699769230967,
+      "scenario_means": {
+        "0": 8.005407864026495,
+        "1": 10.945843467943007,
+        "2": 14.999771010293472,
+        "3": 15.331129356477732,
+        "4": 11.734059067625253,
+        "5": 10.250699253115528,
+        "6": 10.488366794597937,
+        "7": 7.06128059614764
+      },
+      "sessions": 4096,
+      "worst_pnl": -99.30896362238855
+    },
+    "R2B": {
+      "callback_errors": 0,
+      "crashes": 0,
+      "customer_notional": 65039074.740000024,
+      "exchange_notional": 99568177.3899508,
+      "fees": 9953.500000000062,
+      "max_decomposition_error": 9.492850949754938e-11,
+      "maximum_callback_seconds": 0.089988796,
+      "mean_customer_fills": 22.167724609375,
+      "mean_monetary_components": {
+        "customer_spread": 4.325253516893486,
+        "decomposed_pnl": 26.800313150631347,
+        "exchange_execution_edge": 0.0,
+        "exogenous_price_move_pnl": 18.675421146351173,
+        "fees": 2.4300537109375,
+        "penalties": 0.0,
+        "terminal_settlement_residual": 6.229692198324187
+      },
+      "mean_pnl": 26.80031315063087,
+      "mean_q2_at_innovation": [
+        267.96961143927865,
+        431.92088652820104
+      ],
+      "median_pnl": 20.759687322606624,
+      "negative_sessions": 1383,
+      "own_rejections": 0,
+      "penalties": 0.0,
+      "pnl_quantile_05": -89.6507772279765,
+      "scenario_means": {
+        "0": 10.371609319941967,
+        "1": 24.00579754251629,
+        "2": 34.66180162438005,
+        "3": 47.92741077485013,
+        "4": 23.035504180468706,
+        "5": 26.860814150840895,
+        "6": 38.78589706154099,
+        "7": 8.753670550507934
+      },
+      "sessions": 4096,
+      "worst_pnl": -413.27698140751454
+    },
+    "R2B_fixedprice": {
+      "callback_errors": 0,
+      "crashes": 0,
+      "customer_notional": 37411347.81999996,
+      "exchange_notional": 44680412.674751215,
+      "fees": 4467.589999999997,
+      "max_decomposition_error": 1.0162182206840953e-10,
+      "maximum_callback_seconds": 0.086151985,
+      "mean_customer_fills": 11.00537109375,
+      "mean_monetary_components": {
+        "customer_spread": 7.287833939249447,
+        "decomposed_pnl": 15.133548809113291,
+        "exchange_execution_edge": 0.0,
+        "exogenous_price_move_pnl": 2.7464054111180465,
+        "fees": 1.09072021484375,
+        "penalties": 0.0,
+        "terminal_settlement_residual": 6.190029673589545
+      },
+      "mean_pnl": 15.13354880911611,
+      "mean_q2_at_innovation": [
+        2.805392133511158,
+        46.30833571519304
+      ],
+      "median_pnl": 10.677591889194446,
+      "negative_sessions": 882,
+      "own_rejections": 0,
+      "penalties": 0.0,
+      "pnl_quantile_05": -21.048871726914513,
+      "scenario_means": {
+        "0": 5.464094084960465,
+        "1": 13.375581125285834,
+        "2": 17.803697724418726,
+        "3": 29.489172934420452,
+        "4": 29.396716412609493,
+        "5": 8.972357370395457,
+        "6": 10.08991498607071,
+        "7": 6.476855834767747
+      },
+      "sessions": 4096,
+      "worst_pnl": -135.6670113724831
+    },
+    "R2B_matched": {
+      "callback_errors": 0,
+      "crashes": 0,
+      "customer_notional": 38716319.13999997,
+      "exchange_notional": 43795865.565987445,
+      "fees": 4379.110000000004,
+      "max_decomposition_error": 9.064393680091598e-11,
+      "maximum_callback_seconds": 0.143620964,
+      "mean_customer_fills": 11.322509765625,
+      "mean_monetary_components": {
+        "customer_spread": 7.204351169136874,
+        "decomposed_pnl": 14.976096906372607,
+        "exchange_execution_edge": 0.0,
+        "exogenous_price_move_pnl": 2.63361746135513,
+        "fees": 1.0691186523437501,
+        "penalties": 0.0,
+        "terminal_settlement_residual": 6.207246928224352
+      },
+      "mean_pnl": 14.976096906375904,
+      "mean_q2_at_innovation": [
+        2.8913613916412495,
+        43.73065532901423
+      ],
+      "median_pnl": 10.521404512081062,
+      "negative_sessions": 897,
+      "own_rejections": 0,
+      "penalties": 0.0,
+      "pnl_quantile_05": -19.864009168621124,
+      "scenario_means": {
+        "0": 5.513569850840838,
+        "1": 13.184362924016767,
+        "2": 18.085517182652467,
+        "3": 28.53114945621948,
+        "4": 29.267227071714643,
+        "5": 8.813831370869394,
+        "6": 9.695028421578058,
+        "7": 6.718088973115584
+      },
+      "sessions": 4096,
+      "worst_pnl": -119.72788459998264
+    }
+  },
+  "ablations": {
+    "B4_minus_B3": {
+      "assumptions": "independent synthetic path units; equal scenario mixture; approximate bootstrap; no tail-power claim",
+      "independent_paths": 2048,
+      "materiality": 1.0,
+      "opponent_repetitions_not_independent": true,
+      "paired_mean_difference": 13.468490657874884,
+      "stratified_path_bootstrap_95": [
+        11.922217814849798,
+        15.066210210117
+      ],
+      "superiority_gate": true
+    },
+    "B4_minus_reduce": {
+      "assumptions": "independent synthetic path units; equal scenario mixture; approximate bootstrap; no tail-power claim",
+      "independent_paths": 2048,
+      "materiality": 1.0,
+      "opponent_repetitions_not_independent": true,
+      "paired_mean_difference": 11.480511534365185,
+      "stratified_path_bootstrap_95": [
+        9.884225232125168,
+        13.093919827468325
+      ],
+      "superiority_gate": true
+    },
+    "B4_minus_zeroquote": {
+      "assumptions": "independent synthetic path units; equal scenario mixture; approximate bootstrap; no tail-power claim",
+      "independent_paths": 2048,
+      "materiality": 1.0,
+      "opponent_repetitions_not_independent": true,
+      "paired_mean_difference": 0.0,
+      "stratified_path_bootstrap_95": [
+        0.0,
+        0.0
+      ],
+      "superiority_gate": false
+    },
+    "BR2_minus_B4": {
+      "assumptions": "independent synthetic path units; equal scenario mixture; approximate bootstrap; no tail-power claim",
+      "independent_paths": 2048,
+      "materiality": 1.0,
+      "opponent_repetitions_not_independent": true,
+      "paired_mean_difference": -9.452621636182457,
+      "stratified_path_bootstrap_95": [
+        -10.942209810183781,
+        -7.969019161997095
+      ],
+      "superiority_gate": false
+    },
+    "R2B_fixedprice_minus_B4_fixedprice": {
+      "assumptions": "independent synthetic path units; equal scenario mixture; approximate bootstrap; no tail-power claim",
+      "independent_paths": 2048,
+      "materiality": 1.0,
+      "opponent_repetitions_not_independent": true,
+      "paired_mean_difference": -6.549866835974704,
+      "stratified_path_bootstrap_95": [
+        -8.117861399034386,
+        -4.991141150397381
+      ],
+      "superiority_gate": false
+    },
+    "R2B_matched_minus_B4": {
+      "assumptions": "independent synthetic path units; equal scenario mixture; approximate bootstrap; no tail-power claim",
+      "independent_paths": 2048,
+      "materiality": 1.0,
+      "opponent_repetitions_not_independent": true,
+      "paired_mean_difference": -5.578594406084935,
+      "stratified_path_bootstrap_95": [
+        -7.082121072422223,
+        -4.083829773075209
+      ],
+      "superiority_gate": false
+    },
+    "R2B_minus_B4": {
+      "assumptions": "independent synthetic path units; equal scenario mixture; approximate bootstrap; no tail-power claim",
+      "independent_paths": 2048,
+      "materiality": 1.0,
+      "opponent_repetitions_not_independent": true,
+      "paired_mean_difference": 6.245621838170031,
+      "stratified_path_bootstrap_95": [
+        3.7343037201061273,
+        8.670811273333948
+      ],
+      "superiority_gate": true
+    }
+  },
+  "parameter_factorial": {
+    "summary": {
+      "B4__B4_package": {
+        "callback_errors": 0,
+        "controller": "B4",
+        "crashes": 0,
+        "customer_notional": 5027944.559999997,
+        "customer_orders": 5956,
+        "exchange_notional": 5770854.71158711,
+        "fees": 578.3399999999999,
+        "max_decomposition_error": 5.820766091346741e-11,
+        "mean_customer_fills": 11.6328125,
+        "mean_monetary_components": {
+          "customer_spread": 6.103537803905389,
+          "decomposed_pnl": 19.54968950641163,
+          "exchange_execution_edge": 0.0,
+          "exogenous_price_move_pnl": 9.13347916139352,
+          "fees": 1.1295703125,
+          "penalties": 0.0,
+          "terminal_settlement_residual": 5.442242853612726
+        },
+        "mean_pnl": 19.54968950641188,
+        "mean_q2_at_innovation": [
+          38.14672256097557,
+          149.24048844004074
+        ],
+        "negative_sessions": 152,
+        "own_rejections": 0,
+        "package": "B4",
+        "penalties": 0.0,
+        "pnl_quantile_05": -34.3205278366011,
+        "scenario_means": {
+          "0": 5.63745363384578,
+          "1": 13.597009273199774,
+          "2": 20.35297016583877,
+          "3": 37.15984130398806,
+          "4": 27.773905924662813,
+          "5": 7.683175600326422,
+          "6": 33.49754680518504,
+          "7": 10.695613344248386
+        },
+        "sessions": 512,
+        "worst_pnl": -223.4948928016529
+      },
+      "B4__R2B_package": {
+        "callback_errors": 0,
+        "controller": "B4",
+        "crashes": 0,
+        "customer_notional": 7302557.379999998,
+        "customer_orders": 10480,
+        "exchange_notional": 16290139.60478259,
+        "fees": 1630.6399999999992,
+        "max_decomposition_error": 7.677769531255763e-11,
+        "mean_customer_fills": 20.46875,
+        "mean_monetary_components": {
+          "customer_spread": 4.271952632034032,
+          "decomposed_pnl": 33.09069464523003,
+          "exchange_execution_edge": 0.0,
+          "exogenous_price_move_pnl": 26.617560064248508,
+          "fees": 3.1848437499999998,
+          "penalties": 0.0,
+          "terminal_settlement_residual": 5.386025698947496
+        },
+        "mean_pnl": 33.09069464522963,
+        "mean_q2_at_innovation": [
+          275.71138211382146,
+          499.1559959349594
+        ],
+        "negative_sessions": 149,
+        "own_rejections": 0,
+        "package": "R2B",
+        "penalties": 0.0,
+        "pnl_quantile_05": -72.13901406266523,
+        "scenario_means": {
+          "0": 24.64232434962173,
+          "1": 19.385868336117028,
+          "2": 41.678148629503994,
+          "3": 45.16944595494897,
+          "4": 41.440566282424015,
+          "5": 29.997209215722933,
+          "6": 49.58865672880711,
+          "7": 12.82333766469128
+        },
+        "sessions": 512,
+        "worst_pnl": -288.2986510139017
+      },
+      "R2B__B4_package": {
+        "callback_errors": 0,
+        "controller": "R2B",
+        "crashes": 0,
+        "customer_notional": 4953049.720000004,
+        "customer_orders": 5789,
+        "exchange_notional": 5455852.447047015,
+        "fees": 546.5399999999998,
+        "max_decomposition_error": 8.191847200578195e-11,
+        "mean_customer_fills": 11.306640625,
+        "mean_monetary_components": {
+          "customer_spread": 7.307391061407699,
+          "decomposed_pnl": 13.899627322884808,
+          "exchange_execution_edge": 0.0,
+          "exogenous_price_move_pnl": 2.209245636469026,
+          "fees": 1.0674609375,
+          "penalties": 0.0,
+          "terminal_settlement_residual": 5.450451562508084
+        },
+        "mean_pnl": 13.899627322889643,
+        "mean_q2_at_innovation": [
+          2.9666222052845512,
+          42.339176829268254
+        ],
+        "negative_sessions": 106,
+        "own_rejections": 0,
+        "package": "B4",
+        "penalties": 0.0,
+        "pnl_quantile_05": -19.243346496550657,
+        "scenario_means": {
+          "0": 4.6669655354317,
+          "1": 11.702521634002778,
+          "2": 13.884581869833482,
+          "3": 27.25397799157554,
+          "4": 29.803192249168205,
+          "5": 9.038833011384213,
+          "6": 6.929678093852772,
+          "7": 7.917268197868452
+        },
+        "sessions": 512,
+        "worst_pnl": -95.41076454767608
+      },
+      "R2B__R2B_package": {
+        "callback_errors": 0,
+        "controller": "R2B",
+        "crashes": 0,
+        "customer_notional": 8178865.740000002,
+        "customer_orders": 11309,
+        "exchange_notional": 12703491.78137125,
+        "fees": 1271.9199999999985,
+        "max_decomposition_error": 7.765521559122135e-11,
+        "mean_customer_fills": 22.087890625,
+        "mean_monetary_components": {
+          "customer_spread": 4.489791771356703,
+          "decomposed_pnl": 33.004167361952604,
+          "exchange_execution_edge": 0.0,
+          "exogenous_price_move_pnl": 25.610596390689444,
+          "fees": 2.48421875,
+          "penalties": 0.0,
+          "terminal_settlement_residual": 5.387997949906455
+        },
+        "mean_pnl": 33.00416736195248,
+        "mean_q2_at_innovation": [
+          272.1163617886182,
+          433.6120109247971
+        ],
+        "negative_sessions": 141,
+        "own_rejections": 0,
+        "package": "R2B",
+        "penalties": 0.0,
+        "pnl_quantile_05": -75.32578291180543,
+        "scenario_means": {
+          "0": 20.770348906758954,
+          "1": 15.630700644561557,
+          "2": 44.411662353057864,
+          "3": 44.62115857444019,
+          "4": 50.21652522424802,
+          "5": 27.346150981399205,
+          "6": 47.88179414387264,
+          "7": 13.15499806728144
+        },
+        "sessions": 512,
+        "worst_pnl": -288.2986510139017
+      }
+    },
+    "contrasts": {
+      "controller_at_B4_package": {
+        "assumptions": "independent synthetic path units; equal scenario mixture; approximate bootstrap; no tail-power claim",
+        "exploratory": true,
+        "independent_paths": 256,
+        "multiplicity_adjusted": false,
+        "opponent_repetitions_not_independent": true,
+        "paired_mean_difference": -5.6500621835222375,
+        "scenario_mean_contrasts": {
+          "0": -0.97048809841408,
+          "1": -1.8944876391969956,
+          "2": -6.468388296005287,
+          "3": -9.90586331241252,
+          "4": 2.0292863245053923,
+          "5": 1.3556574110577913,
+          "6": -26.567868711332267,
+          "7": -2.778345146379934
+        },
+        "sealed_primary_revised": false,
+        "stratified_path_bootstrap_95": [
+          -9.553651579245097,
+          -1.7794906270234367
+        ]
+      },
+      "controller_at_R2B_package": {
+        "assumptions": "independent synthetic path units; equal scenario mixture; approximate bootstrap; no tail-power claim",
+        "exploratory": true,
+        "independent_paths": 256,
+        "multiplicity_adjusted": false,
+        "opponent_repetitions_not_independent": true,
+        "paired_mean_difference": -0.08652728327714954,
+        "scenario_mean_contrasts": {
+          "0": -3.8719754428627766,
+          "1": -3.755167691555471,
+          "2": 2.7335137235538696,
+          "3": -0.548287380508782,
+          "4": 8.775958941824001,
+          "5": -2.6510582343237274,
+          "6": -1.7068625849344699,
+          "7": 0.3316604025901597
+        },
+        "sealed_primary_revised": false,
+        "stratified_path_bootstrap_95": [
+          -3.8605653996477702,
+          3.728647814449624
+        ]
+      },
+      "diagonal_selected_comparison": {
+        "assumptions": "independent synthetic path units; equal scenario mixture; approximate bootstrap; no tail-power claim",
+        "exploratory": true,
+        "independent_paths": 256,
+        "multiplicity_adjusted": false,
+        "opponent_repetitions_not_independent": true,
+        "paired_mean_difference": 13.454477855540603,
+        "scenario_mean_contrasts": {
+          "0": 15.132895272913174,
+          "1": 2.0336913713617832,
+          "2": 24.058692187219094,
+          "3": 7.461317270452128,
+          "4": 22.442619299585203,
+          "5": 19.662975381072783,
+          "6": 14.3842473386876,
+          "7": 2.459384723033054
+        },
+        "sealed_primary_revised": false,
+        "stratified_path_bootstrap_95": [
+          6.347394515539077,
+          20.669456244747725
+        ]
+      },
+      "interaction": {
+        "assumptions": "independent synthetic path units; equal scenario mixture; approximate bootstrap; no tail-power claim",
+        "exploratory": true,
+        "independent_paths": 256,
+        "multiplicity_adjusted": false,
+        "opponent_repetitions_not_independent": true,
+        "paired_mean_difference": 5.563534900245088,
+        "scenario_mean_contrasts": {
+          "0": -2.9014873444486966,
+          "1": -1.8606800523584752,
+          "2": 9.201902019559157,
+          "3": 9.357575931903739,
+          "4": 6.746672617318609,
+          "5": -4.006715645381519,
+          "6": 24.861006126397797,
+          "7": 3.1100055489700935
+        },
+        "sealed_primary_revised": false,
+        "stratified_path_bootstrap_95": [
+          0.09672375291728565,
+          10.94961050566861
+        ]
+      },
+      "package_with_B4_controller": {
+        "assumptions": "independent synthetic path units; equal scenario mixture; approximate bootstrap; no tail-power claim",
+        "exploratory": true,
+        "independent_paths": 256,
+        "multiplicity_adjusted": false,
+        "opponent_repetitions_not_independent": true,
+        "paired_mean_difference": 13.541005138817752,
+        "scenario_mean_contrasts": {
+          "0": 19.00487071577595,
+          "1": 5.788859062917254,
+          "2": 21.325178463665225,
+          "3": 8.00960465096091,
+          "4": 13.666660357761202,
+          "5": 22.31403361539651,
+          "6": 16.09110992362207,
+          "7": 2.127724320442894
+        },
+        "sealed_primary_revised": false,
+        "stratified_path_bootstrap_95": [
+          6.232663017066908,
+          21.072676103543007
+        ]
+      },
+      "package_with_R2B_controller": {
+        "assumptions": "independent synthetic path units; equal scenario mixture; approximate bootstrap; no tail-power claim",
+        "exploratory": true,
+        "independent_paths": 256,
+        "multiplicity_adjusted": false,
+        "opponent_repetitions_not_independent": true,
+        "paired_mean_difference": 19.10454003906284,
+        "scenario_mean_contrasts": {
+          "0": 16.103383371327254,
+          "1": 3.928179010558779,
+          "2": 30.52708048322438,
+          "3": 17.36718058286465,
+          "4": 20.41333297507981,
+          "5": 18.307317970014992,
+          "6": 40.95211605001987,
+          "7": 5.237729869412988
+        },
+        "sealed_primary_revised": false,
+        "stratified_path_bootstrap_95": [
+          10.749091947871134,
+          27.457089751201373
+        ]
+      }
+    },
+    "design": {
+      "R3_enabled": false,
+      "confirmatory": false,
+      "elapsed_seconds": 96.39612524397671,
+      "independent_paths": 256,
+      "post_primary_exploratory": true,
+      "retuning": false,
+      "scheduled_sessions": 2048,
+      "sealed_primary_revised": false,
+      "source_unchanged": true
+    }
+  },
+  "fill_estimation": {
+    "development_gate_passed": true,
+    "development_rfqs": 9600,
+    "elapsed_seconds": 33.883281863993034,
+    "engine_sessions": 1220,
+    "final_constant_mean_brier": 0.22087074652777772,
+    "final_fill_gate_passed": true,
+    "final_selected_mean_brier": 0.09323469340335805,
+    "independent_primitive_sessions": 1060,
+    "model_fit_seconds": 0.28984741400927305,
+    "official_holdout_opened": false,
+    "permitted_claim": "EMPIRICALLY_SUPPORTED_IN_TESTED_ENVIRONMENT for passed in-domain fill calibration; no superiority or market-transport claim",
+    "research_export_written": true,
+    "response_rfqs": 28800,
+    "runtime_R3_enabled": false,
+    "selected_brier_difference": {
+      "conditional_on_frozen_training_fit": true,
+      "empirical_not_uniform_certificate": true,
+      "independent_sessions": 400,
+      "mean": -0.12763605312441972,
+      "session_bootstrap_95": [
+        -0.13016346198871315,
+        -0.12510733599040522
+      ]
+    },
+    "selected_model": "conditional_finite",
+    "shifted_rfqs": 12000,
+    "source_unchanged": true,
+    "stage": "Controlled synthetic fill and response estimation",
+    "tangent_direct_refit_mean_difference": -3.552713678800501e-15,
+    "training_rfqs": 48000,
+    "validation_rfqs": 48000
+  },
+  "design": {
+    "independent_paths": 2048,
+    "policy_sessions": 53248,
+    "planning_paths": 34838,
+    "power_cap_binds": true,
+    "inference_unit": "price/customer path with opponent repetitions averaged",
+    "main_raw_sha256": "1d53868420dae3814ddc8f7e1c6993f5e09ace671c660cb18990803404fd17e7",
+    "actual_market_evidence": false
+  }
+}

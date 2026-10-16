@@ -1,0 +1,63 @@
+{
+  "version": "2026-10-15-v1",
+  "stage": "Exploratory finite known-kernel control diagnostic",
+  "frozen_before_new_experiments": true,
+  "primary_programme_comparison": "R3 versus strong conventional B3; not evaluated in this diagnostic",
+  "diagnostic_comparison": "R2 baseline-continuation partial resetting versus jointly tuned B3",
+  "selection_endpoint": "expected ledger PnL minus separately reported design risk penalty",
+  "primary_money_diagnostic": "paired session raw PnL, fees and settlement included",
+  "risk_weights": [
+    0.0,
+    0.005
+  ],
+  "regimes": [
+    "balanced",
+    "persistent",
+    "informed",
+    "expensive"
+  ],
+  "horizon": 6,
+  "limit_lots": 3,
+  "band_grid": {
+    "edge": [
+      0.04,
+      0.06,
+      0.08
+    ],
+    "skew": [
+      0.0,
+      0.01
+    ],
+    "threshold_lots": [
+      null,
+      1,
+      2,
+      3
+    ],
+    "target_fraction": [
+      0.0,
+      0.5
+    ]
+  },
+  "candidate_budget_per_method_per_training_model": 48,
+  "budget_limits": "Equal candidate evaluations; CPU time measured separately, not claimed equal. B1/B2 duplicate inapplicable hedge settings retained in budget logs.",
+  "training": "Exact expectation under explicit synthetic model; no seeds used for tuning, no estimation/data identification claim",
+  "validation_seeds": {
+    "first": 2000,
+    "last": 2049
+  },
+  "stress_seeds": {
+    "first": 2050,
+    "last": 2099
+  },
+  "final_test_seeds": "3000--3299 remain unopened",
+  "frozen_quote_ablation": "R2 retains B3 inventory quote map, changes only partial reset target selection",
+  "joint_tuning": "Independently select B3 and R2 settings from the same 48 candidates",
+  "opponent_stress": "Freeze balanced-model policies, evaluate in informed and persistent kernels; no policy access to changed latent atoms",
+  "inference": "Descriptive paired session bootstrap per regime, unadjusted exploratory comparisons; exact model expectations reported separately",
+  "materiality": null,
+  "confirmatory_test": false,
+  "official_sdk_used": false,
+  "no_directional_forecast_baseline": true,
+  "deployment_enabled": false
+}

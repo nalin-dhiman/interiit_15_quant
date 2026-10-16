@@ -1,0 +1,17 @@
+node_modules/
+dist/
+.venv/
+__pycache__/
+*.pyc
+*.egg-info/
+runs/
+artifacts/
+.env
+.env.*
+!.env.example
+.DS_Store
+inputs/
+*.pdf
+*.tex
+*.bib
+*.zip
