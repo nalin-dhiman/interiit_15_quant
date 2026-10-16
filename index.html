@@ -1,0 +1,611 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#f6f5f1" />
+    <meta
+      name="description"
+      content="An interactive RFQ market-making research simulator. Explore self-financing inventory control and compare conventional quoting with partial reset policies."
+    />
+    <title>Inventory Lab — RFQ / Reset</title>
+    <link rel="icon" type="image/svg+xml" href="./assets/favicon.svg" />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#workbench">Skip to simulator</a>
+    <header class="site-header">
+      <a class="brand" href="./" aria-label="Inventory Lab home"
+        ><svg viewBox="0 0 32 32" width="32" height="32" aria-hidden="true">
+          <path d="M4 4h10v10H4zM18 18h10v10H18z" fill="currentColor" />
+          <path
+            d="M18 4h10v10M4 18v10h10M18 14V4M14 18H4"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+          /></svg
+        ><span>INVENTORY <span class="brand-light">LAB</span></span></a
+      >
+      <nav aria-label="Main navigation">
+        <a href="#workbench" class="nav-active">Workbench</a
+        ><a href="#comparison">Compare policies</a
+        ><a
+          href="https://github.com/nalin-dhiman/interiit_15_quant"
+          target="_blank"
+          rel="noopener"
+          >Source <span aria-hidden="true">↗</span></a
+        >
+      </nav>
+    </header>
+    <main>
+      <section class="intro" aria-labelledby="page-title">
+        <div>
+          <p class="eyebrow">RFQ / RESET · INTERACTIVE RESEARCH</p>
+          <h1 id="page-title">A dealer. A market.<br />A decision to reset.</h1>
+          <p class="intro-copy">
+            Quote customer orders, carry inventory, and see when a partial
+            exchange trade earns its cost. Every position has a cash
+            transaction.
+          </p>
+        </div>
+        <div class="intro-note">
+          <span class="status-dot"></span><span>Synthetic exchange</span>
+          <p>Two linked instruments.<br />One transparent ledger.</p>
+          <span class="note-rule"></span
+          ><small
+            >Conventional control is the default.<br />Resetting is a hypothesis
+            to test.</small
+          >
+        </div>
+      </section>
+
+      <section
+        class="workbench"
+        id="workbench"
+        aria-label="Interactive dealer simulator"
+      >
+        <aside class="controls-panel" aria-labelledby="controls-title">
+          <div class="panel-heading">
+            <div>
+              <p class="eyebrow">01 / CONFIGURE</p>
+              <h2 id="controls-title">The dealer</h2>
+            </div>
+            <span class="config-indicator" id="config-indicator">Ready</span
+            ><button
+              class="mobile-config-toggle"
+              id="config-toggle"
+              type="button"
+              aria-label="Configure dealer"
+              aria-controls="config-form"
+              aria-expanded="false"
+            >
+              Adjust <span aria-hidden="true">+</span>
+            </button>
+          </div>
+          <form id="config-form">
+            <label class="field"
+              ><span>Control policy</span
+              ><select id="policy" name="policy" data-testid="policy-select">
+                <option value="B4">B4 · Basis-aware band</option>
+                <option value="R2B">R2B · Continuation reset</option>
+                <option value="B3">B3 · Inventory band</option>
+              </select></label
+            >
+            <p class="field-help" id="policy-help">
+              A conventional partial-target band that uses the same public basis
+              and settlement information.
+            </p>
+            <label class="field"
+              ><span>Market scenario</span
+              ><select
+                id="scenario"
+                name="scenario"
+                data-testid="scenario-select"
+              >
+                <option value="reverting">Mean-reverting basis</option>
+                <option value="persistent">Persistent basis</option>
+                <option value="fast">Fast mean reversion</option>
+                <option value="noisy">High-noise basis</option>
+              </select></label
+            >
+            <div class="field-row">
+              <label class="field"
+                ><span>Seed</span
+                ><input
+                  id="seed"
+                  name="seed"
+                  type="number"
+                  min="0"
+                  max="4294967295"
+                  step="1"
+                  value="42"
+                  data-testid="seed-input" /></label
+              ><label class="field"
+                ><span>Intervals</span
+                ><input
+                  id="steps"
+                  name="steps"
+                  type="number"
+                  min="10"
+                  max="120"
+                  step="10"
+                  value="80"
+              /></label>
+            </div>
+            <div class="control-divider"></div>
+            <label class="range-field" for="quoteEdge"
+              ><span
+                >Quote edge <output id="quoteEdge-value">0.100</output></span
+              ><input
+                id="quoteEdge"
+                name="quoteEdge"
+                type="range"
+                min="0.02"
+                max="0.40"
+                step="0.01"
+                value="0.10"
+                data-testid="edge-control"
+              /><small>Distance from the dealer’s reference price</small></label
+            >
+            <label class="range-field" for="inventorySkew"
+              ><span
+                >Inventory skew
+                <output id="inventorySkew-value">0.006</output></span
+              ><input
+                id="inventorySkew"
+                name="inventorySkew"
+                type="range"
+                min="0"
+                max="0.025"
+                step="0.001"
+                value="0.006"
+              /><small>Quote adjustment per unit of inventory</small></label
+            >
+            <label class="range-field" for="riskAversion"
+              ><span
+                >Risk preference
+                <output id="riskAversion-value">0.006</output></span
+              ><input
+                id="riskAversion"
+                name="riskAversion"
+                type="range"
+                min="0"
+                max="0.030"
+                step="0.001"
+                value="0.006"
+              /><small>Inventory cost in the decision model</small></label
+            >
+            <details class="advanced-controls">
+              <summary>
+                Execution &amp; flow <span aria-hidden="true">+</span>
+              </summary>
+              <div class="advanced-body">
+                <div class="field-row">
+                  <label class="field"
+                    ><span>Fee / unit</span
+                    ><input
+                      id="hedgeFee"
+                      name="hedgeFee"
+                      type="number"
+                      min="0"
+                      max="1"
+                      step="0.005"
+                      value="0.015" /></label
+                  ><label class="field"
+                    ><span>Slippage / unit</span
+                    ><input
+                      id="hedgeSlippage"
+                      name="hedgeSlippage"
+                      type="number"
+                      min="0"
+                      max="1"
+                      step="0.005"
+                      value="0.005"
+                  /></label>
+                </div>
+                <label class="field"
+                  ><span>Fixed cost / intervention</span
+                  ><input
+                    id="resetFixedCost"
+                    name="resetFixedCost"
+                    type="number"
+                    min="0"
+                    max="5"
+                    step="0.01"
+                    value="0" /></label
+                ><label class="field"
+                  ><span>RFQs / interval</span
+                  ><input
+                    id="rfqsPerStep"
+                    name="rfqsPerStep"
+                    type="number"
+                    min="1"
+                    max="6"
+                    step="1"
+                    value="4" /></label
+                ><label class="range-field" for="targetFraction"
+                  ><span
+                    >Target adjustment
+                    <output id="targetFraction-value">1.00</output></span
+                  ><input
+                    id="targetFraction"
+                    name="targetFraction"
+                    type="range"
+                    min="0.25"
+                    max="1"
+                    step="0.05"
+                    value="1"
+                  /><small
+                    >Fraction moved toward the conventional target</small
+                  ></label
+                >
+              </div>
+            </details>
+            <button
+              type="submit"
+              class="button button-outline apply-button"
+              id="apply-button"
+              data-testid="apply-button"
+            >
+              Apply &amp; restart <span aria-hidden="true">↗</span>
+            </button>
+          </form>
+          <div class="policy-key">
+            <span class="key-mark"></span>
+            <p>
+              The model’s risk cost guides decisions. It is kept separate from
+              cash PnL.
+            </p>
+          </div>
+        </aside>
+
+        <div class="simulation-panel">
+          <div class="run-toolbar">
+            <div>
+              <p class="eyebrow">02 / OBSERVE</p>
+              <div class="run-state">
+                <h2>Live session</h2>
+                <span class="state-tag" id="run-state">Ready</span>
+              </div>
+            </div>
+            <div class="run-actions">
+              <button
+                type="button"
+                class="icon-button"
+                id="reset-button"
+                title="Restart the same session"
+                aria-label="Restart session"
+                data-testid="reset-button"
+              >
+                <svg
+                  viewBox="0 0 20 20"
+                  width="18"
+                  height="18"
+                  aria-hidden="true"
+                >
+                  <path
+                    d="M4 5v5h5M4.5 9a6 6 0 1 1 .6 4"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="1.6"
+                  />
+                </svg></button
+              ><button
+                type="button"
+                class="button button-outline"
+                id="step-button"
+                data-testid="step-button"
+              >
+                Step <span aria-hidden="true">→</span></button
+              ><button
+                type="button"
+                class="button button-dark"
+                id="play-button"
+                data-testid="play-button"
+              >
+                <span id="play-icon" aria-hidden="true">▶</span>
+                <span id="play-label">Run session</span>
+              </button>
+            </div>
+          </div>
+          <div class="metrics-grid" aria-live="off">
+            <div class="metric primary-metric">
+              <span>Ledger PnL</span
+              ><strong id="pnl-value" data-testid="pnl-value">0.00</strong
+              ><small id="pnl-caption">Marked at current public prices</small>
+            </div>
+            <div class="metric">
+              <span>Cash balance</span><strong id="cash-value">0.00</strong
+              ><small>Customer + exchange transactions</small>
+            </div>
+            <div class="metric">
+              <span>Inventory A / B</span
+              ><strong id="inventory-value">0 / 0</strong
+              ><small id="exposure-caption">Settlement exposure 0</small>
+            </div>
+            <div class="metric">
+              <span>Customer fills</span><strong id="fills-value">0</strong
+              ><small id="fees-caption">Exchange costs 0.00</small>
+            </div>
+          </div>
+          <div class="chart-panel">
+            <div class="chart-heading">
+              <div class="chart-tabs" role="tablist" aria-label="Chart display">
+                <button
+                  type="button"
+                  class="chart-tab active"
+                  role="tab"
+                  aria-selected="true"
+                  data-chart="pnl"
+                >
+                  PnL</button
+                ><button
+                  type="button"
+                  class="chart-tab"
+                  role="tab"
+                  aria-selected="false"
+                  data-chart="market"
+                >
+                  Market
+                </button>
+              </div>
+              <div class="chart-legend" id="chart-legend">
+                <span><i class="legend-line blue"></i>Marked PnL</span>
+              </div>
+            </div>
+            <div class="chart-wrap">
+              <svg
+                id="main-chart"
+                viewBox="0 0 900 265"
+                role="img"
+                aria-label="Session PnL chart"
+              ></svg>
+              <div class="empty-chart-hint" id="chart-hint">
+                Your first decision starts the path.
+              </div>
+            </div>
+            <div class="inventory-chart-heading">
+              <span>Inventory</span>
+              <div class="chart-legend">
+                <span><i class="legend-line blue"></i>A</span
+                ><span><i class="legend-line brick"></i>B</span>
+              </div>
+            </div>
+            <svg
+              id="inventory-chart"
+              viewBox="0 0 900 112"
+              role="img"
+              aria-label="Inventory of products A and B"
+            ></svg>
+            <div class="session-progress">
+              <div class="progress-track">
+                <span id="session-progress-bar"></span>
+              </div>
+              <span id="session-progress-label">Interval 0 / 80</span>
+            </div>
+          </div>
+          <div class="observation-row">
+            <section class="observation-card">
+              <div class="mini-heading">
+                <span>Latest RFQ</span
+                ><span id="rfq-status" class="tiny-tag">Awaiting order</span>
+              </div>
+              <p class="rfq-description" id="rfq-description">
+                No customer order yet.
+              </p>
+              <div class="readout-row">
+                <span>Dealer quote</span><strong id="quote-value">—</strong>
+              </div>
+              <div class="readout-row">
+                <span>Public prices A / B</span
+                ><strong id="market-value">100.00 / 200.00</strong>
+              </div>
+            </section>
+            <section class="observation-card">
+              <div class="mini-heading">
+                <span>Exchange intervention</span
+                ><span id="decision-tag" class="tiny-tag">No action</span>
+              </div>
+              <p class="rfq-description" id="decision-description">
+                The dealer can retain its position.
+              </p>
+              <div class="readout-row">
+                <span>Selected target</span><strong id="target-value">—</strong>
+              </div>
+              <div class="readout-row">
+                <span>Model-value advantage</span
+                ><strong id="advantage-value">—</strong>
+              </div>
+            </section>
+          </div>
+        </div>
+      </section>
+
+      <section class="ledger-section" aria-labelledby="ledger-title">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">03 / RECONCILE</p>
+            <h2 id="ledger-title">The cash tells the story.</h2>
+            <p>
+              Customer fills and exchange trades, recorded in the same ledger.
+            </p>
+          </div>
+          <div class="section-actions">
+            <span class="reconcile-status" id="ledger-status"
+              ><span class="status-dot"></span>Balanced</span
+            ><button
+              class="text-button"
+              id="export-run"
+              type="button"
+              data-testid="export-run"
+            >
+              Export CSV <span aria-hidden="true">↓</span></button
+            ><button class="text-button" id="export-config" type="button">
+              Run JSON <span aria-hidden="true">↓</span>
+            </button>
+          </div>
+        </div>
+        <div class="table-scroll">
+          <table class="ledger-table">
+            <thead>
+              <tr>
+                <th scope="col">Interval</th>
+                <th scope="col">Transaction</th>
+                <th scope="col">Product</th>
+                <th scope="col">Quantity</th>
+                <th scope="col">Price</th>
+                <th scope="col">Cash change</th>
+                <th scope="col">Fee</th>
+              </tr>
+            </thead>
+            <tbody id="ledger-body">
+              <tr class="empty-row">
+                <td colspan="7">
+                  Run or step the dealer to inspect its transactions.
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="ledger-bottom">
+          <span id="ledger-count">0 transactions</span
+          ><span>Most recent 12 shown · export includes the full session</span>
+        </div>
+      </section>
+
+      <section
+        class="comparison-section"
+        id="comparison"
+        aria-labelledby="comparison-title"
+      >
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">04 / COMPARE</p>
+            <h2 id="comparison-title">Give each policy the same market.</h2>
+            <p>
+              Fresh sessions with shared exogenous shocks. Costs stay in the
+              PnL.
+            </p>
+          </div>
+          <span class="section-number" aria-hidden="true">↗</span>
+        </div>
+        <div class="comparison-layout">
+          <div class="comparison-controls">
+            <label class="field"
+              ><span>Independent paths</span
+              ><select id="batch-paths">
+                <option value="32">32 paths · quick check</option>
+                <option value="128" selected>128 paths · comparison</option>
+                <option value="200">200 paths · extended</option>
+              </select></label
+            ><button
+              type="button"
+              class="button button-dark"
+              id="compare-button"
+              data-testid="compare-button"
+            >
+              Compare policies <span aria-hidden="true">→</span>
+            </button>
+            <div class="batch-progress" id="batch-progress" hidden>
+              <div class="progress-track">
+                <span id="batch-progress-bar"></span>
+              </div>
+              <span id="batch-progress-label">Starting…</span>
+            </div>
+            <p class="comparison-note">
+              Uses the applied configuration and new seeds derived from your
+              seed. Shared shocks do not imply identical customer fills. Means
+              and uncertainty describe this simulation only.
+            </p>
+          </div>
+          <div class="comparison-results" id="comparison-results">
+            <div class="comparison-empty">
+              <svg
+                viewBox="0 0 96 64"
+                width="96"
+                height="64"
+                aria-hidden="true"
+              >
+                <path
+                  d="M10 54V10M10 54h76"
+                  stroke="currentColor"
+                  fill="none"
+                />
+                <path
+                  d="m14 47 15-7 14 3 14-20 14 6 13-17M14 48l15-4 14-8 14 3 14-10 13-5"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  fill="none"
+                />
+              </svg>
+              <p>A single path can be lucky.<br />Compare the distribution.</p>
+            </div>
+          </div>
+        </div>
+        <div class="comparison-footer">
+          <span id="comparison-caption">No comparison has been run.</span
+          ><button
+            type="button"
+            class="text-button"
+            id="export-comparison"
+            hidden
+          >
+            Export comparison <span aria-hidden="true">↓</span>
+          </button>
+        </div>
+      </section>
+
+      <section class="understand-section" aria-labelledby="understand-title">
+        <div>
+          <p class="eyebrow">THE MODEL, IN PLAIN WORDS</p>
+          <h2 id="understand-title">
+            Carry risk.<br />
+            Pay to change it.
+          </h2>
+        </div>
+        <div class="model-notes">
+          <article>
+            <span class="note-index">01</span>
+            <h3>A fill moves inventory and cash.</h3>
+            <p>
+              When a customer buys, the dealer sells. When a customer sells, the
+              dealer buys. An exchange intervention follows the same accounting
+              and pays its execution costs.
+            </p>
+          </article>
+          <article>
+            <span class="note-index">02</span>
+            <h3>A reset is a trade, not an eraser.</h3>
+            <p>
+              The continuation policy compares retaining exposure with feasible
+              inventory targets. A partial reset changes the position; previous
+              losses and the market history remain.
+            </p>
+          </article>
+          <article>
+            <span class="note-index">03</span>
+            <h3>Settlement and predictability matter.</h3>
+            <p>
+              Instrument B settles to twice A. The difference between B and
+              twice A is the public basis. A conventional controller can use
+              that information too; a positive result does not by itself
+              identify an advantage from resetting.
+            </p>
+          </article>
+        </div>
+      </section>
+      <footer>
+        <a class="footer-brand" href="#">INVENTORY LAB</a
+        ><span>Self-financing RFQ control · a research simulation</span
+        ><a
+          href="https://github.com/nalin-dhiman/interiit_15_quant"
+          target="_blank"
+          rel="noopener"
+          >View the code ↗</a
+        >
+      </footer>
+    </main>
+    <div class="toast" id="toast" role="status" aria-live="polite"></div>
+    <script type="module" src="./app.js"></script>
+  </body>
+</html>
