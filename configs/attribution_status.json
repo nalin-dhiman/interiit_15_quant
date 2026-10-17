@@ -1,0 +1,15 @@
+{
+  "stage": "constrained_attribution",
+  "status": "POLICY_AND_SAMPLE_SEALED_BEFORE_FINAL",
+  "source_commit": "871ff40",
+  "public_declaration": "data/constrained-attribution-preregistration.json",
+  "primary": "wide/fixed/common B4-selected package R2B-minus-B4",
+  "current_claim": "INCONCLUSIVE until sealed final and independent audit",
+  "deployment_changed": false,
+  "R3_enabled": false,
+  "final_paths": 2272,
+  "scheduled_final_sessions": 72704,
+  "planned_workers": 12,
+  "cap_binds": false,
+  "policy_seal": "data/constrained-attribution-policy-seal.json"
+}
