@@ -1,0 +1,935 @@
+{
+  "archived_inputs_sha256": {
+    "declaration.json": "c4f344afac3fa27cdfba142b35e5296c3e01036834a04881e1ec3f4224655ee8",
+    "final_price_tapes.json.gz": "fe78b5e01577fd8b496b456569e7b88f6b11d9ceb963ae39c2b8ef262947494f",
+    "final_sessions.jsonl.gz": "ccbcd385f0edfe54c2f3f9a632baf7721cd5e185e19d43a3f640c5c54e41d7a0",
+    "independent_audit_analysis.json": "4477f685b983f90b2a6159bfe327f74815863b1156f2b78a1db33b0cb2153aed",
+    "pilot_policy_seal.json": "c6ad86df3d9c8fa447b034269e0e53fb20a21e5718d19c46dda66f9bef5fc642"
+  },
+  "cautions": [
+    "2272 paths, not 72704 independent observations; opponent repeats stay within path.",
+    "Eight contrast labels are three distinct economic comparisons on shared paths.",
+    "Common admissible rectangle does not equalize realised risk.",
+    "R2B mean loss does not establish overall risk-return inferiority or no value from resetting.",
+    "Accounting components are not causal mediation.",
+    "Synthetic price laws and nonhedging heuristic opponents; no real-market transport claim.",
+    "Independent implementation audit reuses an existing ledger checker; it is not external peer review."
+  ],
+  "contrasts": {
+    "B4/tight/fixed": {
+      "assumptions": "independent generated paths; fixed equal scenario weights; approximate bootstrap coverage",
+      "confirmatory": false,
+      "independent_paths": 2272,
+      "material_benefit_excluded": true,
+      "material_benefit_supported": false,
+      "materiality": 1.0,
+      "mean_loss_supported": true,
+      "multiplicity_adjusted": false,
+      "paired_mean_difference": -1.3625513055259726,
+      "practical_equivalence_supported": false,
+      "scenario_mean_differences": {
+        "0": -0.3300059919502915,
+        "1": -1.3349723822634394,
+        "2": -2.1622564048290553,
+        "3": -1.2419248663365425,
+        "4": -0.40022740734334356,
+        "5": -1.5058637780451354,
+        "6": -4.457349236552392,
+        "7": 0.5321896231124182
+      },
+      "stratified_path_bootstrap_95": [
+        -1.7367912091438698,
+        -0.990349736080096
+      ]
+    },
+    "B4/tight/inventory": {
+      "assumptions": "independent generated paths; fixed equal scenario weights; approximate bootstrap coverage",
+      "confirmatory": false,
+      "independent_paths": 2272,
+      "material_benefit_excluded": true,
+      "material_benefit_supported": false,
+      "materiality": 1.0,
+      "mean_loss_supported": true,
+      "multiplicity_adjusted": false,
+      "paired_mean_difference": -1.1893846779290587,
+      "practical_equivalence_supported": false,
+      "scenario_mean_differences": {
+        "0": -0.3892582140054491,
+        "1": -0.9633160125583127,
+        "2": -1.691659595441924,
+        "3": -1.2838555170176693,
+        "4": -0.3605979885469167,
+        "5": -1.6241509722975946,
+        "6": -3.7149439987284416,
+        "7": 0.5127048751638399
+      },
+      "stratified_path_bootstrap_95": [
+        -1.516946369237691,
+        -0.8559684306467222
+      ]
+    },
+    "B4/wide/fixed": {
+      "assumptions": "independent generated paths; fixed equal scenario weights; approximate bootstrap coverage",
+      "confirmatory": true,
+      "independent_paths": 2272,
+      "material_benefit_excluded": true,
+      "material_benefit_supported": false,
+      "materiality": 1.0,
+      "mean_loss_supported": true,
+      "multiplicity_adjusted": null,
+      "paired_mean_difference": -1.447366069487018,
+      "practical_equivalence_supported": false,
+      "scenario_mean_differences": {
+        "0": -1.097844947336904,
+        "1": -1.516045132474074,
+        "2": -2.0689868857058222,
+        "3": -1.0866318411261116,
+        "4": -0.0824663111277043,
+        "5": -4.070941351342849,
+        "6": -2.5972690319412974,
+        "7": 0.9412569451586177
+      },
+      "stratified_path_bootstrap_95": [
+        -2.2133189033962593,
+        -0.6791493108940454
+      ]
+    },
+    "B4/wide/inventory": {
+      "assumptions": "independent generated paths; fixed equal scenario weights; approximate bootstrap coverage",
+      "confirmatory": false,
+      "independent_paths": 2272,
+      "material_benefit_excluded": true,
+      "material_benefit_supported": false,
+      "materiality": 1.0,
+      "mean_loss_supported": true,
+      "multiplicity_adjusted": false,
+      "paired_mean_difference": -1.447366069487018,
+      "practical_equivalence_supported": false,
+      "scenario_mean_differences": {
+        "0": -1.097844947336904,
+        "1": -1.516045132474074,
+        "2": -2.0689868857058222,
+        "3": -1.0866318411261116,
+        "4": -0.0824663111277043,
+        "5": -4.070941351342849,
+        "6": -2.5972690319412974,
+        "7": 0.9412569451586177
+      },
+      "stratified_path_bootstrap_95": [
+        -2.223317899013325,
+        -0.6902848129420406
+      ]
+    },
+    "R2B/tight/fixed": {
+      "assumptions": "independent generated paths; fixed equal scenario weights; approximate bootstrap coverage",
+      "confirmatory": false,
+      "independent_paths": 2272,
+      "material_benefit_excluded": true,
+      "material_benefit_supported": false,
+      "materiality": 1.0,
+      "mean_loss_supported": true,
+      "multiplicity_adjusted": false,
+      "paired_mean_difference": -1.3625513055259726,
+      "practical_equivalence_supported": false,
+      "scenario_mean_differences": {
+        "0": -0.3300059919502915,
+        "1": -1.3349723822634394,
+        "2": -2.1622564048290553,
+        "3": -1.2419248663365425,
+        "4": -0.40022740734334356,
+        "5": -1.5058637780451354,
+        "6": -4.457349236552392,
+        "7": 0.5321896231124182
+      },
+      "stratified_path_bootstrap_95": [
+        -1.7477242045287253,
+        -0.9889636104417442
+      ]
+    },
+    "R2B/tight/inventory": {
+      "assumptions": "independent generated paths; fixed equal scenario weights; approximate bootstrap coverage",
+      "confirmatory": false,
+      "independent_paths": 2272,
+      "material_benefit_excluded": true,
+      "material_benefit_supported": false,
+      "materiality": 1.0,
+      "mean_loss_supported": true,
+      "multiplicity_adjusted": false,
+      "paired_mean_difference": -1.1893846779290587,
+      "practical_equivalence_supported": false,
+      "scenario_mean_differences": {
+        "0": -0.3892582140054491,
+        "1": -0.9633160125583127,
+        "2": -1.691659595441924,
+        "3": -1.2838555170176693,
+        "4": -0.3605979885469167,
+        "5": -1.6241509722975946,
+        "6": -3.7149439987284416,
+        "7": 0.5127048751638399
+      },
+      "stratified_path_bootstrap_95": [
+        -1.514443868714112,
+        -0.8624767725427851
+      ]
+    },
+    "R2B/wide/fixed": {
+      "assumptions": "independent generated paths; fixed equal scenario weights; approximate bootstrap coverage",
+      "confirmatory": false,
+      "independent_paths": 2272,
+      "material_benefit_excluded": true,
+      "material_benefit_supported": false,
+      "materiality": 1.0,
+      "mean_loss_supported": true,
+      "multiplicity_adjusted": false,
+      "paired_mean_difference": -1.447366069487018,
+      "practical_equivalence_supported": false,
+      "scenario_mean_differences": {
+        "0": -1.097844947336904,
+        "1": -1.516045132474074,
+        "2": -2.0689868857058222,
+        "3": -1.0866318411261116,
+        "4": -0.0824663111277043,
+        "5": -4.070941351342849,
+        "6": -2.5972690319412974,
+        "7": 0.9412569451586177
+      },
+      "stratified_path_bootstrap_95": [
+        -2.2397678945095363,
+        -0.6614701839698425
+      ]
+    },
+    "R2B/wide/inventory": {
+      "assumptions": "independent generated paths; fixed equal scenario weights; approximate bootstrap coverage",
+      "confirmatory": false,
+      "independent_paths": 2272,
+      "material_benefit_excluded": true,
+      "material_benefit_supported": false,
+      "materiality": 1.0,
+      "mean_loss_supported": true,
+      "multiplicity_adjusted": false,
+      "paired_mean_difference": -1.447366069487018,
+      "practical_equivalence_supported": false,
+      "scenario_mean_differences": {
+        "0": -1.097844947336904,
+        "1": -1.516045132474074,
+        "2": -2.0689868857058222,
+        "3": -1.0866318411261116,
+        "4": -0.0824663111277043,
+        "5": -4.070941351342849,
+        "6": -2.5972690319412974,
+        "7": 0.9412569451586177
+      },
+      "stratified_path_bootstrap_95": [
+        -2.226477016145152,
+        -0.684378128209315
+      ]
+    }
+  },
+  "declaration_commit": "30da4c2",
+  "design": {
+    "R3_enabled": false,
+    "budgets": {
+      "tight": {
+        "A": 10.0,
+        "B": 5.0
+      },
+      "wide": {
+        "A": 20.0,
+        "B": 10.0
+      }
+    },
+    "controllers": [
+      "B4",
+      "R2B"
+    ],
+    "development_opponents": [
+      "standard",
+      "wide"
+    ],
+    "final_opponents": [
+      "size_mix",
+      "public_basis"
+    ],
+    "namespace": "constrained-attribution-v1/20261017T051731Z",
+    "primary": "R2B-B4 / B4-selected shared package / wide / fixed",
+    "quote_modes": [
+      "fixed",
+      "inventory"
+    ],
+    "scope": "same ex ante rectangle, not equal realised risk; synthetic offline only",
+    "stage": "sealed fresh constrained-attribution final study"
+  },
+  "execution": {
+    "all_failures_retained": true,
+    "common_ex_ante_envelope": true,
+    "elapsed_seconds": 937.5146461550612,
+    "independent_paths": 2272,
+    "precision_cap_binds": false,
+    "prefix_identical": true,
+    "realised_risk_matched": false,
+    "sequential_parallel_prefix_sessions": 32,
+    "sessions": 72704,
+    "source_unchanged": true,
+    "workers": 12
+  },
+  "independent_audit": {
+    "complete": true,
+    "customer_subset_checks": 27147328,
+    "declared_source_files": 101,
+    "elapsed_seconds": 464.9526752070524,
+    "envelope_not_realised_variance_matching": true,
+    "fixed_common": 464626,
+    "fixed_formula_checks": 1006554,
+    "fixed_one_side": 77302,
+    "independent_paths": 2272,
+    "limitations": [
+      "Bootstrap coverage is approximate under independent generated paths and fixed strata.",
+      "The existing verified independent ledger routine is reused, not an additional independent accounting derivation.",
+      "Trace arithmetic is independently reconstructed from archived reservations and pending items; a complete exchange action log is not reconstructed.",
+      "This audit establishes declared synthetic bookkeeping and inference, not market fidelity or novelty."
+    ],
+    "maximum_errors": {
+      "account_cash": 8.731149137020111e-11,
+      "account_fees": 0.0,
+      "cash_after_each_trade": 8.731149137020111e-11,
+      "cash_settlement_pnl": 8.731149137020111e-11,
+      "component_customer_spread": 0.0,
+      "component_decomposed_pnl": 0.0,
+      "component_exchange_execution_edge": 0.0,
+      "component_exogenous_price_move_pnl": 0.0,
+      "component_fees": 0.0,
+      "component_penalties": 0.0,
+      "component_terminal_settlement_residual": 0.0,
+      "customer_notional": 0.0,
+      "customer_trade_count": 0.0,
+      "exchange_execution_price": 0.0,
+      "exchange_notional": 0.0,
+      "exchange_trade_count": 0.0,
+      "final_position_A": 0.0,
+      "final_position_B": 0.0,
+      "final_reference_A": 0.0,
+      "final_reference_B": 0.0,
+      "final_settlement_A": 0.0,
+      "final_settlement_B": 0.0,
+      "independent_money_identity": 6.056599666237616e-11,
+      "innovation_count": 0.0,
+      "innovation_factor2": 0.0,
+      "innovation_q2_A": 0.0,
+      "innovation_q2_B": 0.0,
+      "multiplier_q2_A": 0.0,
+      "multiplier_q2_B": 0.0,
+      "nonzero_innovation_count": 0.0,
+      "position_after_each_trade": 0.0,
+      "reference_price": 0.0,
+      "trade_fee": 0.0,
+      "trade_notional": 0.0
+    },
+    "no_exclusions": true,
+    "own_trades": 489100,
+    "pending_subset_checks": 636854,
+    "pilot": {
+      "complete_pilot_ledger_replay": true,
+      "final_paths": 2272,
+      "pilot_independent_paths": 96,
+      "precision_cap_binds": false,
+      "required_independent_paths": 2271,
+      "tuning_sessions": 2304,
+      "validation_sessions": 3072,
+      "within_stratum_effective_variance": 289.140832546232
+    },
+    "prefix_new_independent_samples": 0,
+    "primary": {
+      "independent_paths": 2272,
+      "material_benefit_excluded": true,
+      "material_benefit_supported": false,
+      "materiality": 1.0,
+      "paired_mean_difference": -1.447366069487018,
+      "practical_equivalence_supported": false,
+      "stratified_path_bootstrap_95": [
+        -2.2133189033962593,
+        -0.6791493108940454
+      ]
+    },
+    "rfqs": 2617344,
+    "risk_checks": 33374978,
+    "sequential_parallel_prefix_verified": true,
+    "sessions": 72704,
+    "status": "NUMERICALLY_CHECKED"
+  },
+  "primary": {
+    "assumptions": "independent generated paths; fixed equal scenario weights; approximate bootstrap coverage",
+    "confirmatory": true,
+    "independent_paths": 2272,
+    "material_benefit_excluded": true,
+    "material_benefit_supported": false,
+    "materiality": 1.0,
+    "mean_loss_supported": true,
+    "multiplicity_adjusted": null,
+    "paired_mean_difference": -1.447366069487018,
+    "practical_equivalence_supported": false,
+    "scenario_mean_differences": {
+      "0": -1.097844947336904,
+      "1": -1.516045132474074,
+      "2": -2.0689868857058222,
+      "3": -1.0866318411261116,
+      "4": -0.0824663111277043,
+      "5": -4.070941351342849,
+      "6": -2.5972690319412974,
+      "7": 0.9412569451586177
+    },
+    "stratified_path_bootstrap_95": [
+      -2.2133189033962593,
+      -0.6791493108940454
+    ]
+  },
+  "scope": "Prospectively sealed synthetic constrained RFQ controller-attribution study",
+  "seal_commit": "cd01475",
+  "source_commit": "871ff40",
+  "starting_commit": "4f4333c66033d1894011e58c1fc455e3c2f8cb34",
+  "summary": {
+    "B4/B4/tight/fixed": {
+      "mean_customer_fills": 2.712367957746479,
+      "mean_exchange_notional": 4574.941934302724,
+      "mean_factor2_at_innovation": 55.830957288446115,
+      "mean_fees": 0.4573943661971831,
+      "mean_monetary_components": {
+        "customer_spread": 0.8711239953183741,
+        "decomposed_pnl": 4.9811034458075,
+        "exchange_execution_edge": 0.0,
+        "exogenous_price_move_pnl": 3.36877986905209,
+        "fees": 0.4573943661971831,
+        "penalties": 0.0,
+        "terminal_settlement_residual": 1.1985939476342191
+      },
+      "mean_pnl": 4.981103445810728,
+      "mean_q2_at_innovation": [
+        3.594512195121949,
+        13.024177330241486
+      ],
+      "negative_sessions": 1450,
+      "pnl_quantile_05": -14.766028545029258,
+      "scenario_means": {
+        "0": 1.529835045587058,
+        "1": 3.374939866313967,
+        "2": 6.481626253926895,
+        "3": 9.79881626308708,
+        "4": 4.660287162454193,
+        "5": 3.9426180856432222,
+        "6": 9.698831446722847,
+        "7": 0.3618734427505637
+      },
+      "sessions": 4544,
+      "worst_pnl": -87.05057075122022
+    },
+    "B4/B4/tight/inventory": {
+      "mean_customer_fills": 3.310299295774648,
+      "mean_exchange_notional": 4225.504657071476,
+      "mean_factor2_at_innovation": 55.22211546719341,
+      "mean_fees": 0.42246698943661976,
+      "mean_monetary_components": {
+        "customer_spread": 0.7095879424070017,
+        "decomposed_pnl": 5.014294868812529,
+        "exchange_execution_edge": 0.0,
+        "exogenous_price_move_pnl": 3.536217958541998,
+        "fees": 0.42246698943661976,
+        "penalties": 0.0,
+        "terminal_settlement_residual": 1.1909559573001496
+      },
+      "mean_pnl": 5.014294868815385,
+      "mean_q2_at_innovation": [
+        3.092621020840486,
+        12.997266117027223
+      ],
+      "negative_sessions": 1452,
+      "pnl_quantile_05": -14.383973018637334,
+      "scenario_means": {
+        "0": 1.6237990223129037,
+        "1": 3.5440292389083763,
+        "2": 6.501068652836104,
+        "3": 9.244710415821674,
+        "4": 4.524502673518263,
+        "5": 4.6579304982291,
+        "6": 9.648201381404645,
+        "7": 0.3701170674920204
+      },
+      "sessions": 4544,
+      "worst_pnl": -87.48049505044764
+    },
+    "B4/B4/wide/fixed": {
+      "mean_customer_fills": 1.1142165492957747,
+      "mean_exchange_notional": 12090.273019168319,
+      "mean_factor2_at_innovation": 325.2486974693691,
+      "mean_fees": 1.208794014084507,
+      "mean_monetary_components": {
+        "customer_spread": 0.13452032896094482,
+        "decomposed_pnl": 8.333749523353472,
+        "exchange_execution_edge": 0.0,
+        "exogenous_price_move_pnl": 7.001565234817309,
+        "fees": 1.208794014084507,
+        "penalties": 0.0,
+        "terminal_settlement_residual": 2.406457973659724
+      },
+      "mean_pnl": 8.333749523369319,
+      "mean_q2_at_innovation": [
+        0.9885062406962092,
+        81.00709235085154
+      ],
+      "negative_sessions": 1677,
+      "pnl_quantile_05": -40.84983300824242,
+      "scenario_means": {
+        "0": 2.358997158205633,
+        "1": 4.547539528170322,
+        "2": 10.41217218481724,
+        "3": 17.590375983538916,
+        "4": 6.823461262513633,
+        "5": 7.918287751685108,
+        "6": 17.549270475383334,
+        "7": -0.5301081573596375
+      },
+      "sessions": 4544,
+      "worst_pnl": -180.75750492217776
+    },
+    "B4/B4/wide/inventory": {
+      "mean_customer_fills": 1.1142165492957747,
+      "mean_exchange_notional": 12090.273019168319,
+      "mean_factor2_at_innovation": 325.2486974693691,
+      "mean_fees": 1.208794014084507,
+      "mean_monetary_components": {
+        "customer_spread": 0.13452032896094482,
+        "decomposed_pnl": 8.333749523353472,
+        "exchange_execution_edge": 0.0,
+        "exogenous_price_move_pnl": 7.001565234817309,
+        "fees": 1.208794014084507,
+        "penalties": 0.0,
+        "terminal_settlement_residual": 2.406457973659724
+      },
+      "mean_pnl": 8.333749523369319,
+      "mean_q2_at_innovation": [
+        0.9885062406962092,
+        81.00709235085154
+      ],
+      "negative_sessions": 1677,
+      "pnl_quantile_05": -40.84983300824242,
+      "scenario_means": {
+        "0": 2.358997158205633,
+        "1": 4.547539528170322,
+        "2": 10.41217218481724,
+        "3": 17.590375983538916,
+        "4": 6.823461262513633,
+        "5": 7.918287751685108,
+        "6": 17.549270475383334,
+        "7": -0.5301081573596375
+      },
+      "sessions": 4544,
+      "worst_pnl": -180.75750492217776
+    },
+    "B4/R2B/tight/fixed": {
+      "mean_customer_fills": 2.712367957746479,
+      "mean_exchange_notional": 4574.941934302724,
+      "mean_factor2_at_innovation": 55.830957288446115,
+      "mean_fees": 0.4573943661971831,
+      "mean_monetary_components": {
+        "customer_spread": 0.8711239953183741,
+        "decomposed_pnl": 4.9811034458075,
+        "exchange_execution_edge": 0.0,
+        "exogenous_price_move_pnl": 3.36877986905209,
+        "fees": 0.4573943661971831,
+        "penalties": 0.0,
+        "terminal_settlement_residual": 1.1985939476342191
+      },
+      "mean_pnl": 4.981103445810728,
+      "mean_q2_at_innovation": [
+        3.594512195121949,
+        13.024177330241486
+      ],
+      "negative_sessions": 1450,
+      "pnl_quantile_05": -14.766028545029258,
+      "scenario_means": {
+        "0": 1.529835045587058,
+        "1": 3.374939866313967,
+        "2": 6.481626253926895,
+        "3": 9.79881626308708,
+        "4": 4.660287162454193,
+        "5": 3.9426180856432222,
+        "6": 9.698831446722847,
+        "7": 0.3618734427505637
+      },
+      "sessions": 4544,
+      "worst_pnl": -87.05057075122022
+    },
+    "B4/R2B/tight/inventory": {
+      "mean_customer_fills": 3.310299295774648,
+      "mean_exchange_notional": 4225.504657071476,
+      "mean_factor2_at_innovation": 55.22211546719341,
+      "mean_fees": 0.42246698943661976,
+      "mean_monetary_components": {
+        "customer_spread": 0.7095879424070017,
+        "decomposed_pnl": 5.014294868812529,
+        "exchange_execution_edge": 0.0,
+        "exogenous_price_move_pnl": 3.536217958541998,
+        "fees": 0.42246698943661976,
+        "penalties": 0.0,
+        "terminal_settlement_residual": 1.1909559573001496
+      },
+      "mean_pnl": 5.014294868815385,
+      "mean_q2_at_innovation": [
+        3.092621020840486,
+        12.997266117027223
+      ],
+      "negative_sessions": 1452,
+      "pnl_quantile_05": -14.383973018637334,
+      "scenario_means": {
+        "0": 1.6237990223129037,
+        "1": 3.5440292389083763,
+        "2": 6.501068652836104,
+        "3": 9.244710415821674,
+        "4": 4.524502673518263,
+        "5": 4.6579304982291,
+        "6": 9.648201381404645,
+        "7": 0.3701170674920204
+      },
+      "sessions": 4544,
+      "worst_pnl": -87.48049505044764
+    },
+    "B4/R2B/wide/fixed": {
+      "mean_customer_fills": 1.1142165492957747,
+      "mean_exchange_notional": 12090.273019168319,
+      "mean_factor2_at_innovation": 325.2486974693691,
+      "mean_fees": 1.208794014084507,
+      "mean_monetary_components": {
+        "customer_spread": 0.13452032896094482,
+        "decomposed_pnl": 8.333749523353472,
+        "exchange_execution_edge": 0.0,
+        "exogenous_price_move_pnl": 7.001565234817309,
+        "fees": 1.208794014084507,
+        "penalties": 0.0,
+        "terminal_settlement_residual": 2.406457973659724
+      },
+      "mean_pnl": 8.333749523369319,
+      "mean_q2_at_innovation": [
+        0.9885062406962092,
+        81.00709235085154
+      ],
+      "negative_sessions": 1677,
+      "pnl_quantile_05": -40.84983300824242,
+      "scenario_means": {
+        "0": 2.358997158205633,
+        "1": 4.547539528170322,
+        "2": 10.41217218481724,
+        "3": 17.590375983538916,
+        "4": 6.823461262513633,
+        "5": 7.918287751685108,
+        "6": 17.549270475383334,
+        "7": -0.5301081573596375
+      },
+      "sessions": 4544,
+      "worst_pnl": -180.75750492217776
+    },
+    "B4/R2B/wide/inventory": {
+      "mean_customer_fills": 1.1142165492957747,
+      "mean_exchange_notional": 12090.273019168319,
+      "mean_factor2_at_innovation": 325.2486974693691,
+      "mean_fees": 1.208794014084507,
+      "mean_monetary_components": {
+        "customer_spread": 0.13452032896094482,
+        "decomposed_pnl": 8.333749523353472,
+        "exchange_execution_edge": 0.0,
+        "exogenous_price_move_pnl": 7.001565234817309,
+        "fees": 1.208794014084507,
+        "penalties": 0.0,
+        "terminal_settlement_residual": 2.406457973659724
+      },
+      "mean_pnl": 8.333749523369319,
+      "mean_q2_at_innovation": [
+        0.9885062406962092,
+        81.00709235085154
+      ],
+      "negative_sessions": 1677,
+      "pnl_quantile_05": -40.84983300824242,
+      "scenario_means": {
+        "0": 2.358997158205633,
+        "1": 4.547539528170322,
+        "2": 10.41217218481724,
+        "3": 17.590375983538916,
+        "4": 6.823461262513633,
+        "5": 7.918287751685108,
+        "6": 17.549270475383334,
+        "7": -0.5301081573596375
+      },
+      "sessions": 4544,
+      "worst_pnl": -180.75750492217776
+    },
+    "R2B/B4/tight/fixed": {
+      "mean_customer_fills": 3.0660211267605635,
+      "mean_exchange_notional": 2821.4582247018434,
+      "mean_factor2_at_innovation": 27.019348305278825,
+      "mean_fees": 0.28209507042253523,
+      "mean_monetary_components": {
+        "customer_spread": 0.9313009061967499,
+        "decomposed_pnl": 3.6185521402865555,
+        "exchange_execution_edge": 0.0,
+        "exogenous_price_move_pnl": 1.7678382177835539,
+        "fees": 0.28209507042253523,
+        "penalties": 0.0,
+        "terminal_settlement_residual": 1.2015080867287868
+      },
+      "mean_pnl": 3.6185521402847556,
+      "mean_q2_at_innovation": [
+        0.4895332360013735,
+        6.631607480247374
+      ],
+      "negative_sessions": 1376,
+      "pnl_quantile_05": -9.392628329246508,
+      "scenario_means": {
+        "0": 1.1998290536367664,
+        "1": 2.0399674840505275,
+        "2": 4.319369849097839,
+        "3": 8.556891396750538,
+        "4": 4.2600597551108494,
+        "5": 2.4367543075980866,
+        "6": 5.241482210170457,
+        "7": 0.894063065862982
+      },
+      "sessions": 4544,
+      "worst_pnl": -59.842452632816276
+    },
+    "R2B/B4/tight/inventory": {
+      "mean_customer_fills": 3.5517165492957745,
+      "mean_exchange_notional": 2818.361191220132,
+      "mean_factor2_at_innovation": 31.844825303446694,
+      "mean_fees": 0.28178917253521124,
+      "mean_monetary_components": {
+        "customer_spread": 0.6823798263627984,
+        "decomposed_pnl": 3.824910190887793,
+        "exchange_execution_edge": 0.0,
+        "exogenous_price_move_pnl": 2.229564302792931,
+        "fees": 0.28178917253521124,
+        "penalties": 0.0,
+        "terminal_settlement_residual": 1.1947552342672754
+      },
+      "mean_pnl": 3.824910190886327,
+      "mean_q2_at_innovation": [
+        0.5356675111645469,
+        7.828815627504927
+      ],
+      "negative_sessions": 1357,
+      "pnl_quantile_05": -10.785612363155087,
+      "scenario_means": {
+        "0": 1.2345408083074545,
+        "1": 2.580713226350064,
+        "2": 4.80940905739418,
+        "3": 7.960854898804005,
+        "4": 4.163904684971347,
+        "5": 3.033779525931505,
+        "6": 5.933257382676203,
+        "7": 0.8828219426558603
+      },
+      "sessions": 4544,
+      "worst_pnl": -58.86419465347717
+    },
+    "R2B/B4/wide/fixed": {
+      "mean_customer_fills": 1.7387764084507042,
+      "mean_exchange_notional": 9335.16846327013,
+      "mean_factor2_at_innovation": 209.11284781861903,
+      "mean_fees": 0.9333978873239438,
+      "mean_monetary_components": {
+        "customer_spread": 0.059772228318173797,
+        "decomposed_pnl": 6.886383453874882,
+        "exchange_execution_edge": 0.0,
+        "exogenous_price_move_pnl": 5.352137586046317,
+        "fees": 0.9333978873239438,
+        "penalties": 0.0,
+        "terminal_settlement_residual": 2.407871526834334
+      },
+      "mean_pnl": 6.886383453882301,
+      "mean_q2_at_innovation": [
+        0.8878678575518171,
+        52.04273660254182
+      ],
+      "negative_sessions": 1667,
+      "pnl_quantile_05": -31.299300328734535,
+      "scenario_means": {
+        "0": 1.261152210868729,
+        "1": 3.0314943956962477,
+        "2": 8.343185299111418,
+        "3": 16.503744142412806,
+        "4": 6.740994951385929,
+        "5": 3.8473464003422584,
+        "6": 14.952001443442038,
+        "7": 0.4111487877989802
+      },
+      "sessions": 4544,
+      "worst_pnl": -140.74030572079937
+    },
+    "R2B/B4/wide/inventory": {
+      "mean_customer_fills": 1.7387764084507042,
+      "mean_exchange_notional": 9335.16846327013,
+      "mean_factor2_at_innovation": 209.11284781861903,
+      "mean_fees": 0.9333978873239438,
+      "mean_monetary_components": {
+        "customer_spread": 0.059772228318173797,
+        "decomposed_pnl": 6.886383453874882,
+        "exchange_execution_edge": 0.0,
+        "exogenous_price_move_pnl": 5.352137586046317,
+        "fees": 0.9333978873239438,
+        "penalties": 0.0,
+        "terminal_settlement_residual": 2.407871526834334
+      },
+      "mean_pnl": 6.886383453882301,
+      "mean_q2_at_innovation": [
+        0.8878678575518171,
+        52.04273660254182
+      ],
+      "negative_sessions": 1667,
+      "pnl_quantile_05": -31.299300328734535,
+      "scenario_means": {
+        "0": 1.261152210868729,
+        "1": 3.0314943956962477,
+        "2": 8.343185299111418,
+        "3": 16.503744142412806,
+        "4": 6.740994951385929,
+        "5": 3.8473464003422584,
+        "6": 14.952001443442038,
+        "7": 0.4111487877989802
+      },
+      "sessions": 4544,
+      "worst_pnl": -140.74030572079937
+    },
+    "R2B/R2B/tight/fixed": {
+      "mean_customer_fills": 3.0660211267605635,
+      "mean_exchange_notional": 2821.4582247018434,
+      "mean_factor2_at_innovation": 27.019348305278825,
+      "mean_fees": 0.28209507042253523,
+      "mean_monetary_components": {
+        "customer_spread": 0.9313009061967499,
+        "decomposed_pnl": 3.6185521402865555,
+        "exchange_execution_edge": 0.0,
+        "exogenous_price_move_pnl": 1.7678382177835539,
+        "fees": 0.28209507042253523,
+        "penalties": 0.0,
+        "terminal_settlement_residual": 1.2015080867287868
+      },
+      "mean_pnl": 3.6185521402847556,
+      "mean_q2_at_innovation": [
+        0.4895332360013735,
+        6.631607480247374
+      ],
+      "negative_sessions": 1376,
+      "pnl_quantile_05": -9.392628329246508,
+      "scenario_means": {
+        "0": 1.1998290536367664,
+        "1": 2.0399674840505275,
+        "2": 4.319369849097839,
+        "3": 8.556891396750538,
+        "4": 4.2600597551108494,
+        "5": 2.4367543075980866,
+        "6": 5.241482210170457,
+        "7": 0.894063065862982
+      },
+      "sessions": 4544,
+      "worst_pnl": -59.842452632816276
+    },
+    "R2B/R2B/tight/inventory": {
+      "mean_customer_fills": 3.5517165492957745,
+      "mean_exchange_notional": 2818.361191220132,
+      "mean_factor2_at_innovation": 31.844825303446694,
+      "mean_fees": 0.28178917253521124,
+      "mean_monetary_components": {
+        "customer_spread": 0.6823798263627984,
+        "decomposed_pnl": 3.824910190887793,
+        "exchange_execution_edge": 0.0,
+        "exogenous_price_move_pnl": 2.229564302792931,
+        "fees": 0.28178917253521124,
+        "penalties": 0.0,
+        "terminal_settlement_residual": 1.1947552342672754
+      },
+      "mean_pnl": 3.824910190886327,
+      "mean_q2_at_innovation": [
+        0.5356675111645469,
+        7.828815627504927
+      ],
+      "negative_sessions": 1357,
+      "pnl_quantile_05": -10.785612363155087,
+      "scenario_means": {
+        "0": 1.2345408083074545,
+        "1": 2.580713226350064,
+        "2": 4.80940905739418,
+        "3": 7.960854898804005,
+        "4": 4.163904684971347,
+        "5": 3.033779525931505,
+        "6": 5.933257382676203,
+        "7": 0.8828219426558603
+      },
+      "sessions": 4544,
+      "worst_pnl": -58.86419465347717
+    },
+    "R2B/R2B/wide/fixed": {
+      "mean_customer_fills": 1.7387764084507042,
+      "mean_exchange_notional": 9335.16846327013,
+      "mean_factor2_at_innovation": 209.11284781861903,
+      "mean_fees": 0.9333978873239438,
+      "mean_monetary_components": {
+        "customer_spread": 0.059772228318173797,
+        "decomposed_pnl": 6.886383453874882,
+        "exchange_execution_edge": 0.0,
+        "exogenous_price_move_pnl": 5.352137586046317,
+        "fees": 0.9333978873239438,
+        "penalties": 0.0,
+        "terminal_settlement_residual": 2.407871526834334
+      },
+      "mean_pnl": 6.886383453882301,
+      "mean_q2_at_innovation": [
+        0.8878678575518171,
+        52.04273660254182
+      ],
+      "negative_sessions": 1667,
+      "pnl_quantile_05": -31.299300328734535,
+      "scenario_means": {
+        "0": 1.261152210868729,
+        "1": 3.0314943956962477,
+        "2": 8.343185299111418,
+        "3": 16.503744142412806,
+        "4": 6.740994951385929,
+        "5": 3.8473464003422584,
+        "6": 14.952001443442038,
+        "7": 0.4111487877989802
+      },
+      "sessions": 4544,
+      "worst_pnl": -140.74030572079937
+    },
+    "R2B/R2B/wide/inventory": {
+      "mean_customer_fills": 1.7387764084507042,
+      "mean_exchange_notional": 9335.16846327013,
+      "mean_factor2_at_innovation": 209.11284781861903,
+      "mean_fees": 0.9333978873239438,
+      "mean_monetary_components": {
+        "customer_spread": 0.059772228318173797,
+        "decomposed_pnl": 6.886383453874882,
+        "exchange_execution_edge": 0.0,
+        "exogenous_price_move_pnl": 5.352137586046317,
+        "fees": 0.9333978873239438,
+        "penalties": 0.0,
+        "terminal_settlement_residual": 2.407871526834334
+      },
+      "mean_pnl": 6.886383453882301,
+      "mean_q2_at_innovation": [
+        0.8878678575518171,
+        52.04273660254182
+      ],
+      "negative_sessions": 1667,
+      "pnl_quantile_05": -31.299300328734535,
+      "scenario_means": {
+        "0": 1.261152210868729,
+        "1": 3.0314943956962477,
+        "2": 8.343185299111418,
+        "3": 16.503744142412806,
+        "4": 6.740994951385929,
+        "5": 3.8473464003422584,
+        "6": 14.952001443442038,
+        "7": 0.4111487877989802
+      },
+      "sessions": 4544,
+      "worst_pnl": -140.74030572079937
+    }
+  }
+}

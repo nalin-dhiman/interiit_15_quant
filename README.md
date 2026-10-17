@@ -88,6 +88,27 @@ application or ordinary NumPy tests.
 
 ## What the research found
 
+The latest prospectively sealed attribution benchmark compares the policies
+under shared information, a common development-selected parameter package and
+an identical private inventory envelope. It includes **72,704 policy sessions
+on 2,272 independent paths**. In its primary comparison, conventional B4
+averaged **8.3337**, versus **6.8864** for R2B. The R2B-minus-B4 difference was
+**−1.4474**, with a path-bootstrap 95% interval **[−2.2133, −0.6791]**.
+This fails the predeclared +1 raw-PnL improvement objective. R2B had lower
+measured inventory exposure, lower fees and a better descriptive fifth-percentile
+outcome; an overall risk–return ranking is not established. Common allowed
+exposure does not mean equal realised variance. This tests the implemented
+continuation approximation in the declared synthetic mixture, rather than all
+possible partial-hedging policies.
+
+See [results and limitations](docs/ATTRIBUTION_RESULTS.md),
+[the audited aggregates](data/constrained-attribution-results.json),
+[the frozen protocol](docs/RISK_MATCHED_ATTRIBUTION_PROTOCOL.md),
+[reproduction instructions](docs/CONSTRAINED_ATTRIBUTION_REPRODUCTION.md),
+[the exposure constraint](docs/COMMON_RISK_ENVELOPE.md), and
+[the refreshed prior-art comparison](docs/ATTRIBUTION_PRIOR_ART.md).
+The original experiments below are separate cohorts and remain unchanged.
+
 The historical synthetic SDK comparison contains **53,248 policy sessions on
 2,048 independent price/customer paths**. The jointly selected R2B policy
 averaged 26.8003 PnL versus 20.5547 for the preselected conventional B4 policy.
