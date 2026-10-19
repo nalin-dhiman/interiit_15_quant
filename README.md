@@ -161,20 +161,3 @@ See [the model](docs/model.md), [reproducibility](docs/reproducibility.md) and
 [the research limits](docs/limitations.md). The manuscript and supplement are
 maintained separately; they are not part of this code repository or deployment.
 
-## Selected references
-
-- Evans, M. R. & Majumdar, S. N. (2011). *Diffusion with stochastic resetting*.
-  [Physical Review Letters 106, 160601](https://doi.org/10.1103/PhysRevLett.106.160601).
-- Barzykin, A., Bergault, P. & Guéant, O. *Algorithmic market making in dealer
-  markets with hedging and market impact*.
-  [Author manuscript](https://arxiv.org/abs/2106.06974v6).
-- Guilbaud, F. & Pham, H. (2013). *Optimal high-frequency trading with limit and
-  market orders*. [Quantitative Finance 13, 79–94](https://doi.org/10.1080/14697688.2012.708779).
-- Dai, J. G. & Yao, D. (2013). *Brownian inventory models with convex holding cost,
-  Part 1: Average-optimal controls*.
-  [Stochastic Systems 3, 442–499](https://doi.org/10.1287/11-SSY041).
-- Maes, C. (2020). *Response Theory: A Trajectory-Based Approach*.
-  [Frontiers in Physics 8, 229](https://doi.org/10.3389/fphy.2020.00229).
-
-Resetting, impulse control and dealer hedging have substantial prior literature.
-Their combination alone does not establish novelty or profitability.
