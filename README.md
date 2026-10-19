@@ -10,6 +10,15 @@ inventory and cash.
 The interface runs entirely in your browser. It has no accounts, API keys,
 external trading connections, analytics, runtime libraries or server dependency.
 
+## Quick overview
+
+[![Watch the market-making overview video](media/market-making-overview.jpg)](media/market-making-overview.mp4)
+
+[Watch or download: The Physics of Market Making — Brownian Resetting in RFQ Markets](media/market-making-overview.mp4) · 8 min 56 sec
+
+A visual introduction to RFQs, inventory risk, Brownian resetting, and the
+project’s control approach.
+
 ## Use the bot
 
 Choose a policy and a synthetic market, set a seed, then step through the session
